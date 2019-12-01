@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import axios from 'axios';
 import '../css/main.css';
 
@@ -60,7 +60,7 @@ const Contact = () => {
 				<div className="section__contact--container">
 					<h2>Want to work together?</h2>
 					<hr></hr>
-					<form onSubmit={formSubmit} className="section__contact--container--form">
+					<form onSubmit={e => formSubmit(e)} className="section__contact--container--form">
 						<div className="section__contact--container--form--input-row">
 							<div className="section__contact--container--form--input-row--icon-box">
 								<i className="far fa-user"></i>
@@ -99,7 +99,7 @@ const Contact = () => {
 							/>
 						</div>
 						<div className="section__contact--container--form--input-row">
-							<button onClick={formSubmit}>Send</button>
+							<button>Send</button>
 						</div>
 					</form>
 				</div>
