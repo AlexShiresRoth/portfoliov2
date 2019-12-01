@@ -1,0 +1,12 @@
+.paragraph__mobile{
+    color: darken(#eee, 50%);
+    margin: 1rem 0;
+    & span{
+        color:lighten($orange-color, 5%);
+        text-transform: uppercase;
+    }
+}
+
+p {
+    color: darken(#eee,50%);
+}

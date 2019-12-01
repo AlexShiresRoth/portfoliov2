@@ -1,0 +1,46 @@
+@keyframes bounce {
+	0% {
+		opacity: 0.55;
+		transform: translateY(0vh);
+	}
+	25% {
+		opacity: 0.55;
+	}
+	50% {
+		opacity: 0.7;
+		transform: translateY(-0.5vh);
+	}
+	75% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0.55;
+		transform: translateY(0vh);
+	}
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeInAndRotate {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(5deg);
+	}
+}
+@keyframes fadeInAndRotateReverse {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(-5deg);
+	}
+}

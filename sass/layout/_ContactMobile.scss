@@ -1,0 +1,259 @@
+@media screen and (min-width: 601px) {
+	.section__contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: $dark-orange;
+		background-color: #000110;
+		background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23000b76' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
+		&--container {
+			height: 100%;
+			width: 100%;
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			& hr {
+				background: $orange-color;
+				border: 0;
+				height: 2.5px;
+				width: 15vw;
+			}
+			& h2 {
+				color: #fff;
+				font-family: 'Raleway';
+				margin: 1rem 0;
+				font-size: 4rem;
+			}
+			&--form {
+				margin: 2rem 0;
+				background: #fff;
+				box-shadow: 0 2px 2px darken(#666, 10%);
+				min-height: 20rem;
+				min-width: 30vw;
+				max-width: 80vw;
+				border-radius: 2px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 2rem;
+				&--input-row {
+					margin: 1rem 2rem;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					&--icon-box {
+						background: $dark-blue;
+						border-top-left-radius: 5px;
+						border-bottom-left-radius: 5px;
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						min-height: 2.5rem;
+						min-width: 2.5rem;
+						& i {
+							color: #fff;
+							font-size: 1.1rem;
+							padding: 0.5rem;
+						}
+					}
+					& input {
+						border: 1px solid darken(#eee, 5%);
+						border-top-right-radius: 5px;
+						border-bottom-right-radius: 5px;
+						transition: all 0.2s ease;
+						min-height: 2.5rem;
+						background: #eee;
+						width: 100%;
+						padding: 0.5rem;
+						&:focus {
+							outline: none;
+							border: 1px solid $orange-color;
+						}
+						&:hover {
+							border: 1px solid $orange-color;
+						}
+					}
+					& textarea {
+						border: 1px solid #eee;
+						background: #eee;
+						transition: all 0.2s ease;
+						border-radius: 5px;
+						padding: 0.5rem;
+						width: 100%;
+						&:focus {
+							outline: none;
+							border: 1px solid $orange-color;
+						}
+						&:hover {
+							border: 1px solid $orange-color;
+						}
+					}
+					& button {
+						padding: 1rem 2rem;
+						color: #fff;
+						background: transparent;
+						border: 3px solid $dark-blue;
+						transition: all 0.2s ease;
+						border-radius: 3px;
+						width: 100%;
+						text-transform: uppercase;
+						color: $dark-blue;
+						font-weight: 700;
+						letter-spacing: 2px;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							background: lighten($dark-blue, 5%);
+							border: 3px solid lighten($dark-blue, 5%);
+							cursor: pointer;
+							color: #fff;
+							font-weight: 500;
+						}
+						&:active {
+							background: lighten($dark-blue, 20%);
+							border: 3px solid lighten($dark-blue, 20%);
+							color: #fff;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 750px) {
+	.section__contact {
+		&--container {
+			& h2 {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section__contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: $dark-orange;
+		margin: 2rem 0 0 0;
+		&--container {
+			height: 100%;
+			width: 100%;
+			padding: 2rem 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			& hr {
+				background: $orange-color;
+				border: 0;
+				height: 2.5px;
+				width: 15vw;
+			}
+			& h2 {
+				color: #fff;
+				margin: 1rem 0;
+				font-size: 2rem;
+				font-family: 'Raleway';
+			}
+			&--form {
+				margin: 2rem 0;
+				background: #fff;
+				box-shadow: 0 2px 2px darken(#666, 10%);
+				min-height: 20rem;
+				min-width: 80vw;
+				border-radius: 2px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 0 1rem;
+				&--input-row {
+					margin: 1rem 0;
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					&--icon-box {
+						background: $dark-blue;
+						border-top-left-radius: 5px;
+						border-bottom-left-radius: 5px;
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						min-height: 2.5rem;
+						min-width: 2.5rem;
+						& i {
+							color: #fff;
+							font-size: 1.1rem;
+							padding: 0.5rem;
+						}
+					}
+					& input {
+						border: 1px solid darken(#eee, 5%);
+						border-top-right-radius: 5px;
+						border-bottom-right-radius: 5px;
+						transition: all 0.2s ease;
+						min-height: 2.5rem;
+						background: #eee;
+						width: 100%;
+						padding: 0.5rem;
+						&:focus {
+							outline: none;
+							border: 1px solid $orange-color;
+						}
+						&:hover {
+							border: 1px solid $orange-color;
+						}
+					}
+					& textarea {
+						border: 1px solid #eee;
+						background: #eee;
+						transition: all 0.2s ease;
+						border-radius: 5px;
+						padding: 0.5rem;
+						width: 100%;
+						&:focus {
+							outline: none;
+							border: 1px solid $orange-color;
+						}
+						&:hover {
+							border: 1px solid $orange-color;
+						}
+					}
+					& button {
+						padding: 1rem 2rem;
+						color: #fff;
+						background: transparent;
+						border: 3px solid $dark-blue;
+						transition: all 0.2s ease;
+						border-radius: 3px;
+						width: 100%;
+						text-transform: uppercase;
+						color: $dark-blue;
+						font-weight: 700;
+						letter-spacing: 2px;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							background: lighten($dark-blue, 5%);
+							border: 3px solid lighten($dark-blue, 5%);
+							cursor: pointer;
+							color: #fff;
+							font-weight: 500;
+						}
+						&:active {
+							background: lighten($dark-blue, 20%);
+							border: 3px solid lighten($dark-blue, 20%);
+							color: #fff;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}

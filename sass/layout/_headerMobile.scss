@@ -1,0 +1,242 @@
+@media screen and (min-width: 751px) {
+	.section__header {
+		min-height: 65vh;
+		background: darken($orange-color, 5%);
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		position: relative;
+		filter: grayscale(6%);
+		z-index: 0;
+		& svg {
+			top: 95%;
+			position: absolute;
+		}
+		&--logo {
+			z-index: 1;
+			margin: 2rem;
+			max-width: 13rem;
+			max-height: 15rem;
+			align-self: center;
+			animation: fadeIn 1.5s linear 0s 1 forwards;
+			& img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		&--title-and-desc {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			gap: 2rem;
+			justify-items: center;
+			align-content: center;
+			color: #fff;
+			padding: 0rem;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			animation: fadeIn 0.5s linear 0s 1 forwards;
+			&--h1-container {
+				position: relative;
+				background: darken($brand-secondary, 10%);
+				transform: rotate(0deg);
+				box-shadow: 0 5px 5px darken($brand-secondary, 20%);
+				opacity: 0;
+				animation: fadeInAndRotate 0.5s linear 0.5s 1 forwards;
+				& h1 {
+					font-size: 6rem;
+					margin: 0.5rem 0;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: #fff;
+					letter-spacing: 1.4px;
+					padding: 1.5rem;
+					background: $brand-secondary;
+					transform: rotate(0deg);
+					box-shadow: 0 2px 2px darken($brand-secondary, 15%);
+					opacity: 0;
+					animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards;
+				}
+			}
+			& hr {
+				width: 4rem;
+				height: 2px;
+				background: #ff4500;
+				border: 0;
+			}
+			& p {
+				color: #fff;
+				font-size: 2rem;
+				letter-spacing: 1px;
+				margin: 1rem 0;
+				text-transform: uppercase;
+				font-weight: 700;
+				text-align: center;
+			}
+			&--icons {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				margin: 1rem 0;
+				& a {
+					text-decoration: none;
+					margin: 0 0.2rem;
+					transition: all 0.2s ease;
+					&:hover {
+						box-shadow: 0px 5px 30% $dark-orange;
+					}
+					& i {
+						font-size: 2.8rem;
+						color: $brand-secondary;
+						transition: all 0.3s ease;
+
+						&:hover {
+							cursor: pointer;
+							color: darken($brand-secondary, 5%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1000px) {
+	.section__header {
+		min-height: 70vh;
+		background: darken($orange-color, 5%);
+		background-size: cover;
+		background-repeat: no-repeat;
+		& h1 {
+			font-size: 4.5rem;
+		}
+		& svg {
+			top: 100%;
+			position: absolute;
+		}
+		&--icons {
+			& a {
+				& i {
+					font-size: 2rem;
+				}
+			}
+		}
+		&--logo {
+			max-width: 11rem;
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.section__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		min-height: 70vh;
+		background: darken($orange-color, 5%);
+		background-size: cover;
+		background-repeat: no-repeat;
+		align-items: center;
+		position: relative;
+		filter: grayscale(6%);
+		z-index: 0;
+		& svg {
+			top: 100%;
+			position: absolute;
+		}
+		&--logo {
+			z-index: 1;
+			margin: 2rem;
+			max-width: 10rem;
+			max-height: 10rem;
+			align-self: center;
+			animation: fadeIn 1.5s linear 0s 1 forwards;
+			& img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+
+		&--title-and-desc {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			gap: 2rem;
+			justify-items: center;
+			align-content: center;
+			color: #fff;
+			padding: 0rem;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			animation: fadeIn 0.5s linear 0s 1 forwards;
+			&--h1-container {
+				position: relative;
+				background: darken($brand-secondary, 10%);
+				transform: rotate(0deg);
+				box-shadow: 0 5px 5px darken($brand-secondary, 20%);
+				opacity: 0;
+				animation: fadeInAndRotate 0.5s linear 0.5s 1 forwards;
+				& h1 {
+					font-size: 2.6rem;
+					margin: 0.5rem 0;
+					text-transform: uppercase;
+					font-weight: 700;
+					color: #fff;
+					letter-spacing: 1.4px;
+					padding: 1.5rem;
+					background: $brand-secondary;
+					transform: rotate(0deg);
+					box-shadow: 0 2px 2px darken($brand-secondary, 15%);
+					opacity: 0;
+					animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards;
+				}
+			}
+			& hr {
+				width: 4rem;
+				height: 2px;
+				background: #ff4500;
+				border: 0;
+			}
+			& p {
+				color: #fff;
+				font-size: 1.5rem;
+				letter-spacing: 1px;
+				margin: 1rem 0;
+				text-transform: uppercase;
+				font-weight: 700;
+				text-align: center;
+			}
+			&--icons {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				margin: 1rem 0;
+				& a {
+					text-decoration: none;
+					margin: 0 0.2rem;
+					transition: all 0.2s ease;
+					&:hover {
+						box-shadow: 0px 5px 30% $dark-orange;
+					}
+					& i {
+						font-size: 2.4rem;
+						color: $brand-secondary;
+						transition: all 0.3s ease;
+
+						&:hover {
+							cursor: pointer;
+							color: darken($brand-secondary, 5%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
