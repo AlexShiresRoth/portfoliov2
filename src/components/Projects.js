@@ -46,6 +46,9 @@ const Projects = () => {
 			url: 'https://sendnoods.herokuapp.com/',
 			codeurl: 'https://github.com/AlexShiresRoth/send-noods',
 		},
+	];
+
+	const wip = [
 		{
 			title: 'Timer App',
 			tech: 'PassportJS, Express, Javascript, NodeJS',
