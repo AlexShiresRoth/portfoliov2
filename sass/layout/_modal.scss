@@ -13,8 +13,8 @@
 	left: 0;
 	&--response {
 		background: #f3f3f3;
-		height: 30vh;
-		width: 30vw;
+		min-height: 30vh;
+		min-width: 30vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

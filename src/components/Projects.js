@@ -43,7 +43,7 @@ const Projects = () => {
 			img: [
 				'https://res.cloudinary.com/snackmanproductions/image/upload/v1567980261/portfolio/2019-09-08_7_vtodo7.png',
 			],
-			url: 'https://sendnoods.herokuapp.com/',
+			url: 'https://send-noods.netlify.com/',
 			codeurl: 'https://github.com/AlexShiresRoth/send-noods',
 		},
 	];
