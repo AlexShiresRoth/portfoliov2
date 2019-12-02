@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react';
 import axios from 'axios';
+import Modal from './modal/Modal';
 import '../css/main.css';
 
 const Contact = () => {
@@ -8,6 +9,11 @@ const Contact = () => {
 		email: '',
 		message: '',
 	});
+	const [response, setResponse] = useState({
+		success: '',
+		error: '',
+	});
+	const [modalState, setModalState] = useState(false);
 
 	const { name, email, message } = inputs;
 
@@ -23,6 +29,10 @@ const Contact = () => {
 
 			setInputs({ ...inputs, [event.target.name]: [event.target.value] });
 		}
+	};
+
+	const handleModalState = () => {
+		return setModalState(!modalState);
 	};
 
 	const formSubmit = async e => {
@@ -45,17 +55,29 @@ const Contact = () => {
 		})
 			.then(response => {
 				setInputs({ ...initialState });
-				alert('Sent');
+				setResponse({
+					success: response,
+				});
+				setModalState(true);
+				setTimeout(() => {
+					setModalState(false);
+				}, 5000);
 			})
 			.catch(error => {
-				alert(error.message);
-				console.log(error);
+				setModalState(true);
+				setResponse({
+					error: error.response.data,
+				});
+				setTimeout(() => {
+					setModalState(false);
+				}, 5000);
 			});
 	};
 
 	const renderForm = () => {
 		return (
 			<div className="section__contact">
+				<Modal modalState={modalState} response={response} handleModalState={handleModalState} />
 				<div className="section__contact--container">
 					<h2>Want to work together?</h2>
 					<hr></hr>
