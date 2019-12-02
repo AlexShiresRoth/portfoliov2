@@ -44,7 +44,6 @@ const Contact = () => {
 			},
 		})
 			.then(response => {
-				console.log(response);
 				setInputs({ ...initialState });
 				alert('Sent');
 			})
