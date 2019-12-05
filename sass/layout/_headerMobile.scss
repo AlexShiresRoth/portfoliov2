@@ -79,10 +79,10 @@
 				text-align: center;
 			}
 			&--icons {
-				display: flex;
-				flex-direction: row;
-				justify-content: space-around;
-				align-items: center;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: 1fr;
+				gap: 1rem;
 				margin: 1rem 0;
 				& a {
 					text-decoration: none;
@@ -92,7 +92,7 @@
 						box-shadow: 0px 5px 30% $dark-orange;
 					}
 					& i {
-						font-size: 2.8rem;
+						font-size: 4rem;
 						color: $brand-secondary;
 						transition: all 0.3s ease;
 
@@ -146,7 +146,7 @@
 		filter: grayscale(6%);
 		z-index: 0;
 		& svg {
-			top: 100%;
+			top: 98%;
 			position: absolute;
 		}
 		&--logo {
