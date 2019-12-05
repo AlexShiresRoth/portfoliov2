@@ -72,10 +72,10 @@
         font-weight: 700;
         text-align: center; }
       .section__header--title-and-desc--icons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 1rem;
         margin: 1rem 0; }
         .section__header--title-and-desc--icons a {
           text-decoration: none;
@@ -84,7 +84,7 @@
           .section__header--title-and-desc--icons a:hover {
             box-shadow: 0px 5px 30% #000110; }
           .section__header--title-and-desc--icons a i {
-            font-size: 2.8rem;
+            font-size: 4rem;
             color: #5000ca;
             transition: all 0.3s ease; }
             .section__header--title-and-desc--icons a i:hover {
@@ -121,7 +121,7 @@
     filter: grayscale(6%);
     z-index: 0; }
     .section__header svg {
-      top: 100%;
+      top: 98%;
       position: absolute; }
     .section__header--logo {
       z-index: 1;
@@ -775,8 +775,8 @@
   left: 0; }
   .modal__container--response {
     background: #f3f3f3;
-    height: 30vh;
-    width: 30vw;
+    min-height: 30vh;
+    min-width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
