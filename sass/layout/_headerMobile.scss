@@ -7,7 +7,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
-		align-items: center;
+		align-items: flex-start;
 		position: relative;
 		filter: grayscale(6%);
 		z-index: 0;
@@ -116,8 +116,9 @@
 			font-size: 4.5rem;
 		}
 		& svg {
-			top: 100%;
+			top: 98%;
 			position: absolute;
+			width: 100%;
 		}
 		&--icons {
 			& a {
