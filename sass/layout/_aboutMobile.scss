@@ -15,8 +15,9 @@
 		padding: 3rem 1.5rem;
 		max-width: 55vw;
 		background: #f3f3f3;
-		box-shadow: 0 5px 5px darken(#eee, 2%);
+		box-shadow: 0 5px 15px darken(#eee, 2%);
 		border-radius: 5px;
+	
 		& h2 {
 			font-size: 5rem;
 			color: $orange-color;
