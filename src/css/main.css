@@ -245,7 +245,8 @@
           margin: 0rem 0;
           box-shadow: 0 5px 10px #b3b3b3;
           position: relative;
-          display: grid; }
+          display: grid;
+          min-height: 40vh; }
           .section__projects--container--item--image-container--image {
             height: 100%;
             width: 100%;
@@ -265,7 +266,7 @@
             padding: 1rem;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
-            max-height: 12rem;
+            max-height: 15rem;
             align-self: end; }
             .section__projects--container--item--info--description--title {
               display: flex;
@@ -292,7 +293,7 @@
               .section__projects--container--item--info--description--links a {
                 font-size: 1.5rem;
                 color: #5000ca;
-                margin: 0.5rem; }
+                margin: 0.5rem 0 0.5rem 0.5rem; }
                 .section__projects--container--item--info--description--links a:hover {
                   color: #6400fd;
                   cursor: pointer; } }
@@ -311,8 +312,10 @@
       .section__projects--container--item--image-container {
         width: 100%;
         height: 100%; }
-      .section__projects--container--item--info h2 {
-        font-size: 2rem; } }
+      .section__projects--container--item--info--description--title h2 {
+        font-size: 1.6rem; }
+      .section__projects--container--item--info--description--links a {
+        margin: 0.2rem; } }
 
 @media screen and (max-width: 600px) {
   .section__projects {
@@ -374,7 +377,7 @@
           height: 100%;
           width: 100%; }
           .section__projects--container--item--info--description {
-            padding: .5rem;
+            padding: 0.5rem;
             width: 100%;
             background: rgba(0, 0, 0, 0.7);
             max-height: 12rem;
@@ -396,7 +399,7 @@
                 font-size: 1.5rem; }
             .section__projects--container--item--info--description p {
               color: #f3f3f3;
-              font-size: .9rem; }
+              font-size: 0.9rem; }
             .section__projects--container--item--info--description--links {
               display: flex;
               flex-direction: row;

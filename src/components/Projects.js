@@ -16,7 +16,7 @@ const Projects = () => {
         "https://res.cloudinary.com/snackmanproductions/image/upload/v1567980236/portfolio/2019-09-08_5_ciahbf.png"
       ],
       url: "http://www.italianobrosenterprise.com/",
-      codeurl: "https://github.com/AlexShiresRoth/italiano-bros"
+      codeurl: "https://github.com/AlexShiresRoth/italianobrosv2"
     },
     {
       title: "Progress Journal",
