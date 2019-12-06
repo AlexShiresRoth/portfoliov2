@@ -5,8 +5,12 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		display: flex;
+		display: -webkit-flex;
+		display: -webkit-box;
+		-webkit-justify-content: flex-start;
 		flex-direction: column;
 		justify-content: flex-start;
+
 		position: relative;
 		filter: grayscale(6%);
 		z-index: 0;
@@ -19,7 +23,6 @@
 			margin: 2rem;
 			max-width: 13rem;
 			max-height: 15rem;
-			align-self: center;
 			& img {
 				height: 100%;
 				width: 100%;
@@ -105,6 +108,7 @@
 		background: darken($orange-color, 5%);
 		background-size: cover;
 		background-repeat: no-repeat;
+		justify-content: flex-start;
 		& h1 {
 			font-size: 4.5rem;
 		}
@@ -147,7 +151,6 @@
 			margin: 2rem;
 			max-width: 10rem;
 			max-height: 10rem;
-			align-self: center;
 			animation: fadeIn 1.5s linear 0s 1 forwards;
 			& img {
 				height: 100%;
