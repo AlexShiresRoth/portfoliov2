@@ -8,8 +8,7 @@ const About = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log(entry);
-        if (entry.intersectionRatio >= 0.5) {
+        if (entry.intersectionRatio > 0.2) {
           setVisibility(true);
         }
       },

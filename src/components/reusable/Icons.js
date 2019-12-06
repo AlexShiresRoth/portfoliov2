@@ -3,9 +3,9 @@ import { animated } from "react-spring";
 import "../../css/main.css";
 
 export const Icons = ({ icons, slideUpLong }) => {
-  const renderIcons = icons.map(icon => {
+  const renderIcons = icons.map((icon, i) => {
     return (
-      <a target="_blank" href={`${icon.url}`}>
+      <a target="_blank" href={`${icon.url}`} key={i}>
         {icon.icon}
       </a>
     );
