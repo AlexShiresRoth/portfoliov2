@@ -1,13 +1,12 @@
 @media screen and (min-width: 751px) {
 	.section__header {
-		min-height: 65vh;
+		min-height: 55vh;
 		background: darken($orange-color, 5%);
 		background-size: cover;
 		background-repeat: no-repeat;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		align-items: flex-start;
+		justify-content: flex-start;
 		position: relative;
 		filter: grayscale(6%);
 		z-index: 0;
@@ -62,12 +61,7 @@
 					animation: fadeInAndRotateReverse 0.5s linear 1s 1 forwards;
 				}
 			}
-			& hr {
-				width: 4rem;
-				height: 2px;
-				background: #ff4500;
-				border: 0;
-			}
+
 			& p {
 				color: #fff;
 				font-size: 2rem;
@@ -107,7 +101,7 @@
 }
 @media screen and (max-width: 1000px) {
 	.section__header {
-		min-height: 70vh;
+		min-height: 60vh;
 		background: darken($orange-color, 5%);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -136,12 +130,11 @@
 	.section__header {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		min-height: 70vh;
+		justify-content: flex-start;
+		min-height: 55vh;
 		background: darken($orange-color, 5%);
 		background-size: cover;
 		background-repeat: no-repeat;
-		align-items: center;
 		position: relative;
 		filter: grayscale(6%);
 		z-index: 0;
