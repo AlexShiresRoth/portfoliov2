@@ -2,6 +2,7 @@
 	.section__header {
 		min-height: 55vh;
 		background: darken($orange-color, 5%);
+		background-image: linear-gradient(to top, darken($orange-color, 5%) 50%, darken($orange-color, 15%));
 		background-size: cover;
 		background-repeat: no-repeat;
 		display: flex;
@@ -137,6 +138,7 @@
 		justify-content: flex-start;
 		min-height: 55vh;
 		background: darken($orange-color, 5%);
+		background-image: linear-gradient(to top, darken($orange-color, 5%) 50%, darken($orange-color, 15%));
 		background-size: cover;
 		background-repeat: no-repeat;
 		position: relative;

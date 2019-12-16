@@ -3,6 +3,7 @@
   .section__header {
     min-height: 55vh;
     background: #00095d;
+    background-image: linear-gradient(to top, #00095d 50%, #00042a);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -111,6 +112,7 @@
     justify-content: flex-start;
     min-height: 55vh;
     background: #00095d;
+    background-image: linear-gradient(to top, #00095d 50%, #00042a);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
