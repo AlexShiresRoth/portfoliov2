@@ -3,7 +3,7 @@
   .section__header {
     min-height: 55vh;
     background: #00095d;
-    background-image: linear-gradient(to top, #00095d 50%, #00042a);
+    background-image: linear-gradient(to top, #00095d 50%, #000b7b);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -50,7 +50,6 @@
           font-size: 6rem;
           margin: 0.5rem 0;
           text-transform: uppercase;
-          font-weight: 700;
           color: #fff;
           letter-spacing: 1.4px;
           padding: 1.5rem;
@@ -112,7 +111,7 @@
     justify-content: flex-start;
     min-height: 55vh;
     background: #00095d;
-    background-image: linear-gradient(to top, #00095d 50%, #00042a);
+    background-image: linear-gradient(to top, #00095d 50%, #000b7b);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -154,7 +153,7 @@
           font-size: 2.6rem;
           margin: 0.5rem 0;
           text-transform: uppercase;
-          font-weight: 700;
+          font-weight: 300;
           color: #fff;
           letter-spacing: 1.4px;
           padding: 1.5rem;
@@ -897,7 +896,7 @@ h1,
 h2,
 h3 {
   font-family: 'Oswald';
-  font-weight: 500; }
+  font-weight: 300; }
 
 @media screen and (max-width: 600px) {
   h2 {
