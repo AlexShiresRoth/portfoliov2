@@ -40,6 +40,16 @@ const Projects = () => {
 			codeurl: 'https://github.com/AlexShiresRoth/send-noods',
 		},
 		{
+			title: 'Pedal Dashboard',
+			desc: `Dynamic web app for checking out guitar effects pedals, utilizing the Reverb API and`,
+			tech: 'built with ReactJS and Redux.',
+			img: [
+				'https://res.cloudinary.com/snackmanproductions/image/upload/v1576456462/portfolio/2019-12-15_2_tv3vop.png',
+			],
+			url: 'https://pedal-dashboard.netlify.com/',
+			codeurl: 'https://github.com/AlexShiresRoth/pedal-dash',
+		},
+		{
 			title: 'Consurgo International, Inc',
 			tech: 'built with ReactJS, GatsbyJS, Sass, NodeJS.',
 			desc: `Responsive SPA for an exporting company,`,
