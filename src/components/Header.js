@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useSpring, animated, config } from "react-spring";
+import { useSpring, animated } from "react-spring";
 import "../css/main.css";
 
 import { Icons } from "./reusable/Icons";
