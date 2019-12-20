@@ -38,7 +38,7 @@ const HeaderTag = props => {
 
 	return (
 		<Fragment>
-			<p style={{ opacity: visibility, transition: 'all .5s ease-in-out' }}>{tag}</p>
+			<span style={{ opacity: visibility, transition: 'all .5s ease-in-out' }}>{tag}</span>
 		</Fragment>
 	);
 };
