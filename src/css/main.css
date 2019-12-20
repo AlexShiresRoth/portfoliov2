@@ -44,6 +44,9 @@
     .nav__components--links a {
       color: #5000ca;
       font-size: 1.2rem; }
+    .nav__components--links--mobile {
+      display: none;
+      visibility: hidden; }
 
 @media screen and (max-width: 700px) {
   .nav__components--links {
@@ -54,7 +57,16 @@
     align-items: center; }
     .nav__components--links a {
       color: #5000ca;
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+    .nav__components--links--mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      visibility: visible;
+      flex: .5; }
+      .nav__components--links--mobile svg {
+        width: 3rem;
+        max-width: 3rem; } }
 
 @keyframes animlogo {
   0% {
@@ -186,8 +198,8 @@
       gap: 2rem;
       justify-items: start;
       align-content: center;
-      padding: 6rem 2rem;
-      height: 100%;
+      padding: 1rem;
+      height: 100vh;
       opacity: 0;
       position: relative;
       background: #f3f3f3;
@@ -218,8 +230,6 @@
           font-size: 1.5rem;
           color: #5000ca; }
         .section__header--title-and-desc--text-container--about p {
-          width: 100%;
-          min-height: 60vh;
           color: #333;
           font-size: 2rem;
           font-weight: 500;
