@@ -1,50 +1,60 @@
-nav{
-    top:0;
-    left:0;
-    display:flex;
+nav {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(243, 243, 243, 0.9);
+  min-height: 5rem;
+  max-height: 5rem;
+  padding: 1rem;
+  width: 100vw;
+  position: absolute;
+  box-shadow: 0 5px 5px darken(#eee, 5%);
+  z-index: 99999;
+  & .nav__logo {
+    display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    align-items: flex-start;
-    background: rgba(243, 243, 243, .9);
-    min-height:5rem;
-    max-height:5rem;
-    padding: 1rem;
-    width:100vw;
-    position: absolute;
-    z-index:99999;
-    & .nav__logo{
-        width:5rem;
-        max-width:5rem;
-        svg {
-            overflow:visible;
-            & circle{
-              stroke-dasharray:0;
-              stroke-dashoffset:0;
-              animation: animlogo 2s linear forwards;
-            }
-            & path{
-              stroke-dasharray:0;
-              animation: animlogo 2s linear forwards;
-            }
-          } 
+    align-items: center;
+    margin-left: 1rem;
+    & p {
+      color: $brand-secondary;
+      font-size: 1.2rem;
     }
-}
-
-@keyframes animlogo{
-    0%{
-      stroke-dasharray:100;
-      stroke-dashoffset:100;
-    }
-    80%{
-      stroke-dasharray:0;
-      stroke-dashoffset:0;
-    }
-    99%{
-      stroke-dasharray:10;
-      stroke-dashoffset:10;
-    }
-    100%{
-      stroke-dasharray:0;
-      stroke-dashoffset:0;
+    svg {
+      margin-right: 1rem;
+      width: 3rem;
+      max-width: 3rem;
+      overflow: visible;
+      & circle {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+        animation: animlogo 2s linear forwards;
+      }
+      & path {
+        stroke-dasharray: 0;
+        animation: animlogo 2s linear forwards;
+      }
     }
   }
+}
+
+@keyframes animlogo {
+  0% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+  80% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+  99% {
+    stroke-dasharray: 10;
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+  }
+}

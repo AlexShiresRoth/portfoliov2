@@ -13,22 +13,25 @@ const Nav = props => {
               r="50"
               stroke="#000b76"
               fill="#000b76"
-              stroke-width="2px"
+              stroke-width="3px"
               fill-opacity="0"
-              stroke-opacity=".6"
+              stroke-opacity="1"
             ></circle>
             <path
               d="M0,50 L50,0 m0,0 L50,50 m0,0 L0,50 m50 0 L0, 100 m0,0 L50,0 m0,100 L50,0 m50,50,L50, 0 m50,50 L50,50 m50,50, L50,50 Z"
               stroke="#000b76"
-              stroke-width="2px"
-              stroke-opacity=".6"
+              stroke-width="3px"
+              stroke-opacity="1"
             />
           </g>
         </svg>
+        <p>Alex Rothenberg</p>
       </div>
-      <p>About</p>
-      <p>Projects</p>
-      <p>Contact</p>
+      <div className="nav__components--links">
+        <p>About</p>
+        <p>Projects</p>
+        <p>Contact</p>
+      </div>
     </nav>
   );
 };
