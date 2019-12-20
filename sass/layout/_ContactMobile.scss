@@ -5,8 +5,6 @@
 		justify-content: center;
 		align-items: center;
 		background: $dark-orange;
-		background-color: #000110;
-		background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23000b76' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E");
 		&--container {
 			height: 100%;
 			width: 100%;
@@ -33,7 +31,6 @@
 				min-height: 20rem;
 				min-width: 50vw;
 				max-width: 80vw;
-				border-radius: 2px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -45,8 +42,6 @@
 					justify-content: center;
 					&--icon-box {
 						background: $dark-blue;
-						border-top-left-radius: 5px;
-						border-bottom-left-radius: 5px;
 						display: flex;
 						flex-direction: row;
 						justify-content: center;
@@ -55,19 +50,18 @@
 						min-width: 2.5rem;
 						& i {
 							color: #fff;
-							font-size: 1.1rem;
-							padding: 0.5rem;
+							font-size: 1.5rem;
+							padding: 1rem;
 						}
 					}
 					& input {
 						border: 1px solid darken(#eee, 5%);
-						border-top-right-radius: 5px;
-						border-bottom-right-radius: 5px;
 						transition: all 0.2s ease;
 						min-height: 2.5rem;
 						background: #eee;
 						width: 100%;
-						padding: 0.5rem;
+						padding: 1.6rem;
+						font-size: 16px;
 						&:focus {
 							outline: none;
 							border: 1px solid $orange-color;
@@ -80,9 +74,9 @@
 						border: 1px solid #eee;
 						background: #eee;
 						transition: all 0.2s ease;
-						border-radius: 5px;
-						padding: 0.5rem;
+						padding: 1rem;
 						width: 100%;
+						font-size: 16px;
 						&:focus {
 							outline: none;
 							border: 1px solid $orange-color;
@@ -97,7 +91,6 @@
 						background: transparent;
 						border: 3px solid $dark-blue;
 						transition: all 0.2s ease;
-						border-radius: 3px;
 						width: 100%;
 						text-transform: uppercase;
 						color: $dark-blue;
@@ -139,7 +132,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: $dark-orange;
 		margin: 2rem 0 0 0;
 		&--container {
 			height: 100%;
@@ -166,7 +158,6 @@
 				box-shadow: 0 2px 2px darken(#666, 10%);
 				min-height: 20rem;
 				min-width: 80vw;
-				border-radius: 2px;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -179,8 +170,6 @@
 					justify-content: center;
 					&--icon-box {
 						background: $dark-blue;
-						border-top-left-radius: 5px;
-						border-bottom-left-radius: 5px;
 						display: flex;
 						flex-direction: row;
 						justify-content: center;
@@ -195,13 +184,12 @@
 					}
 					& input {
 						border: 1px solid darken(#eee, 5%);
-						border-top-right-radius: 5px;
-						border-bottom-right-radius: 5px;
 						transition: all 0.2s ease;
 						min-height: 2.5rem;
 						background: #eee;
 						width: 100%;
 						padding: 0.5rem;
+						font-size: 16px;
 						&:focus {
 							outline: none;
 							border: 1px solid $orange-color;
@@ -214,9 +202,9 @@
 						border: 1px solid #eee;
 						background: #eee;
 						transition: all 0.2s ease;
-						border-radius: 5px;
 						padding: 0.5rem;
 						width: 100%;
+						font-size: 16px;
 						&:focus {
 							outline: none;
 							border: 1px solid $orange-color;
@@ -231,7 +219,6 @@
 						background: transparent;
 						border: 3px solid $dark-blue;
 						transition: all 0.2s ease;
-						border-radius: 3px;
 						width: 100%;
 						text-transform: uppercase;
 						color: $dark-blue;

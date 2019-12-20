@@ -24,7 +24,6 @@
 			width: 70vw;
 			background: #f3f3f3;
 			box-shadow: 0 5px 5px darken(#eee, 2%);
-			border-radius: 5px;
 			padding: 1rem;
 			&--skill-row--icon-block {
 				display: flex;
@@ -32,12 +31,11 @@
 				justify-content: center;
 				align-items: center;
 				box-shadow: 0 3px 3px darken(#eee, 2%);
-				padding: 0.5rem;
+				padding: 1rem;
 				margin: 0 0.5rem;
-				border-radius: 5px;
 				& svg {
 					font-size: 6rem;
-					color: darken($orange-color, 5%);
+					color: darken($brand-secondary, 5%);
 				}
 				& h3 {
 					color: $orange-color;
@@ -72,7 +70,6 @@
 			grid-template-columns: repeat(3, 1fr);
 			background: #f3f3f3;
 			box-shadow: 0 5px 5px darken(#eee, 2%);
-			border-radius: 5px;
 			gap: 1rem;
 			min-height: 30rem;
 			width: 90vw;
@@ -82,11 +79,10 @@
 				justify-content: center;
 				align-items: center;
 				box-shadow: 0 3px 3px darken(#eee, 2%);
-				border-radius: 5px;
 				margin: 0 0.5rem;
 				& svg {
 					font-size: 3.5rem;
-					color: darken($orange-color, 5%);
+					color: darken($brand-secondary, 5%);
 				}
 				& h3 {
 					color: $orange-color;
