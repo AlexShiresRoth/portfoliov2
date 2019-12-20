@@ -10,20 +10,39 @@ export const Loader = () => {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    background: "#000b76"
+    background: "#eee"
   };
-  const imgStyle = {
+  const svgStyle = {
+    width: "10rem",
     maxWidth: "10rem"
   };
   return (
     <div className="load-fallback" style={{ ...loaderStyle }}>
-      <img
-        src={
-          "https://res.cloudinary.com/snackmanproductions/image/upload/v1570836532/portfolio/white_logo_transparent_background_ql1iww.png"
-        }
-        alt="logo"
-        style={{ ...imgStyle }}
-      />
+      <svg
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ ...svgStyle }}
+        className="svg-loader"
+      >
+        <g>
+          <circle
+            cx="50"
+            cy="50"
+            r="50"
+            stroke="#000b76"
+            fill="#000b76"
+            stroke-width="3px"
+            fill-opacity="0"
+            stroke-opacity="1"
+          ></circle>
+          <path
+            d="M0,50 L50,0 m0,0 L50,50 m0,0 L0,50 m50 0 L0, 100 m0,0 L50,0 m0,100 L50,0 m50,50,L50, 0 m50,50 L50,50 m50,50, L50,50 Z"
+            stroke="#000b76"
+            stroke-width="3px"
+            stroke-opacity="1"
+          />
+        </g>
+      </svg>
     </div>
   );
 };

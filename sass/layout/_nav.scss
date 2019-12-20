@@ -1,11 +1,11 @@
-nav {
+.nav__components {
   top: 0;
   left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  background: rgba(243, 243, 243, 0.9);
+  align-items: center;
+  background: #fff;
   min-height: 5rem;
   max-height: 5rem;
   padding: 1rem;
@@ -18,9 +18,10 @@ nav {
     flex-direction: row;
     align-items: center;
     margin-left: 1rem;
+    flex:2;
     & p {
       color: $brand-secondary;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
     svg {
       margin-right: 1rem;
@@ -38,7 +39,20 @@ nav {
       }
     }
   }
+  &--links{
+      flex:1;
+      display:flex;
+      flex-direction:row;
+      justify-content: space-around;
+      align-items: center;
+
+      & a {
+          color:$brand-secondary;
+          font-size:1.2rem;
+      }
+  }
 }
+
 
 @keyframes animlogo {
   0% {
