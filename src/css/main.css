@@ -726,6 +726,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #000110;
     margin: 2rem 0 0 0; }
     .section__contact--container {
       height: 100%;
