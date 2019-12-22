@@ -79,7 +79,8 @@ const Contact = ({ contactRef, setNav }) => {
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
-				if (entry.intersectionRatio > 0.5) {
+				console.log(entry);
+				if (entry.isIntersecting) {
 					setVisibility(true);
 					setNav({
 						navPosition: true,
@@ -90,12 +91,14 @@ const Contact = ({ contactRef, setNav }) => {
 			{
 				root: null,
 				rootMargin: '0px',
-				threshold: 1,
+				threshold: 0.5,
 			}
 		);
-		if (contactRef.current) {
-			observer.observe(contactRef.current);
-		}
+		setTimeout(() => {
+			if (contactRef.current) {
+				observer.observe(contactRef.current);
+			}
+		}, 100);
 	}, []);
 
 	return (
