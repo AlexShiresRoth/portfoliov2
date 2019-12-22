@@ -71,8 +71,8 @@
 .nav__components--links {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-flex-line-pack: start;
       align-content: flex-start;
   justify-items: start;
@@ -111,11 +111,7 @@
   background: #5000ca;
 }
 
-.nav__components--links a:nth-child(2) {
-  border-left: 1px solid #eee;
-}
-
-.nav__components--links a:nth-child(3) {
+.nav__components--links a:not(:first-child) {
   border-left: 1px solid #eee;
 }
 

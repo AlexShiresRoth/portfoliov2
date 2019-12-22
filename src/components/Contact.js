@@ -3,7 +3,7 @@ import axios from "axios";
 import Modal from "./modal/Modal";
 import "../css/main.css";
 
-const Contact = () => {
+const Contact = ({ contactRef }) => {
   const [inputs, setInputs] = useState({
     name: "",
     email: "",
@@ -76,7 +76,7 @@ const Contact = () => {
 
   const renderForm = () => {
     return (
-      <div className="section__contact">
+      <div className="section__contact" ref={contactRef}>
         <Modal
           modalState={modalState}
           response={response}

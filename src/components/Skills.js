@@ -14,7 +14,7 @@ import reactIcon from "@iconify/icons-fa-brands/react";
 import { SkillsMap } from "./skills/SkillsMap";
 import "../css/main.css";
 
-const Skills = () => {
+const Skills = ({ skillsRef }) => {
   const [visibility, setVisibility] = useState(false);
   const skillsArr = [
     {
@@ -66,7 +66,7 @@ const Skills = () => {
   ];
 
   const [skills, setSkills] = useState([]);
-  const skillsRef = useRef();
+
   useEffect(() => {
     setSkills(skillsArr);
 

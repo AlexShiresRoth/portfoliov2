@@ -37,7 +37,7 @@
         animation: animlogo 2s linear forwards; }
   .nav__components--links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-content: flex-start;
     justify-items: start;
     gap: 1rem; }
@@ -63,9 +63,7 @@
         width: 100%;
         display: block;
         background: #5000ca; }
-    .nav__components--links a:nth-child(2) {
-      border-left: 1px solid #eee; }
-    .nav__components--links a:nth-child(3) {
+    .nav__components--links a:not(:first-child) {
       border-left: 1px solid #eee; }
     .nav__components--links--mobile {
       display: none;
