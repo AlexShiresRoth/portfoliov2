@@ -13,6 +13,7 @@
   width: 100vw;
   position: absolute;
   box-shadow: 0 5px 5px #e1e1e1;
+  transition: all 0.4s ease-in-out;
   z-index: 99999; }
   .nav__components .nav__logo {
     display: flex;
@@ -46,7 +47,8 @@
       font-size: 1.2rem;
       padding: 1rem;
       transition: all 0.4s ease-in-out;
-      position: relative; }
+      position: relative;
+      text-decoration: none; }
       .nav__components--links a::after {
         content: '';
         width: 0px;
@@ -65,11 +67,26 @@
         background: #5000ca; }
     .nav__components--links a:not(:first-child) {
       border-left: 1px solid #eee; }
+    .nav__components--links .active::after {
+      content: '';
+      visibility: visible;
+      width: 100%;
+      display: block;
+      background: #5000ca;
+      transition: all 0.4s ease-in-out;
+      position: absolute;
+      top: 100%; }
     .nav__components--links--mobile {
       display: none;
       visibility: hidden; }
   .nav__components .mobile-menu {
     display: none; }
+
+.fixed-nav {
+  animation: fadenav 1s linear forwards;
+  position: fixed;
+  box-shadow: 0 2px 2px #eee;
+  transition: all 0.4s ease-in-out; }
 
 @media screen and (max-width: 700px) {
   .nav__components {
@@ -86,7 +103,8 @@
         transition: all 0.2s ease-in-out;
         opacity: 1;
         margin: 1rem 0;
-        font-weight: 700; }
+        font-weight: 700;
+        text-decoration: none; }
     .nav__components .hide {
       visibility: hidden;
       max-height: 0vh;
@@ -156,6 +174,12 @@
   100% {
     stroke-dasharray: 0;
     stroke-dashoffset: 0; } }
+
+@keyframes fadenav {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.8; } }
 
 @media screen and (min-width: 751px) {
   .section__header {
