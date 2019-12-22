@@ -109,7 +109,7 @@
         .nav__components--links--mobile path {
           transition: all 0.5s ease-in-out; }
     .nav__components .rotated path:nth-child(1) {
-      transform-origin: 50% 50%;
+      transform-origin: 57% 50%;
       transform: rotate(45deg); }
     .nav__components .rotated path:nth-child(2) {
       transform-origin: 0% 0%;
@@ -117,7 +117,7 @@
       stroke-dasharray: 1;
       stroke-dashoffset: 100; }
     .nav__components .rotated path:nth-child(3) {
-      transform-origin: 29% 50%;
+      transform-origin: 20% 50%;
       transform: rotate(-45deg); } }
 
 @keyframes animlogo {

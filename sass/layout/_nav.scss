@@ -133,7 +133,7 @@
     }
     & .rotated {
       & path:nth-child(1) {
-        transform-origin: 50% 50%;
+        transform-origin:  57% 50% ;
         transform: rotate(45deg);
       }
       & path:nth-child(2) {
@@ -143,7 +143,7 @@
         stroke-dashoffset: 100;
       }
       & path:nth-child(3) {
-        transform-origin: 29% 50%;
+        transform-origin: 20% 50%;
         transform: rotate(-45deg);
       }
     }

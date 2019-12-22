@@ -209,8 +209,8 @@
     transition: all 0.5s ease-in-out;
   }
   .nav__components .rotated path:nth-child(1) {
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -webkit-transform-origin: 57% 50%;
+            transform-origin: 57% 50%;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
@@ -223,8 +223,8 @@
     stroke-dashoffset: 100;
   }
   .nav__components .rotated path:nth-child(3) {
-    -webkit-transform-origin: 29% 50%;
-            transform-origin: 29% 50%;
+    -webkit-transform-origin: 20% 50%;
+            transform-origin: 20% 50%;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
