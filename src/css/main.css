@@ -527,7 +527,6 @@
             padding: 0.5rem;
             width: 100%;
             background: rgba(0, 0, 0, 0.92);
-            max-height: 12rem;
             align-self: end; }
             .section__projects--container--item--info--description--title {
               display: flex;
@@ -643,7 +642,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000110; }
+    background: #000110;
+    min-height: 100vh; }
     .section__contact--container {
       height: 100%;
       width: 100%;
