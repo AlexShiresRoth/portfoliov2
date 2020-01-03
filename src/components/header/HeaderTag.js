@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 
 const HeaderTag = props => {
-	const tags = [{ title: 'Self Taught Web Developer' }, { title: 'Freelancer' }, { title: 'Indie Game Dev' }];
+	const tags = [{ title: 'Full Stack Dev' }, { title: 'Front End Dev' }, { title: 'Indie Game Dev' }];
 
 	const [tag, setTag] = useState(tags[0].title);
 
