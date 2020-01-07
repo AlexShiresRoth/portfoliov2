@@ -79,7 +79,6 @@ const Contact = ({ contactRef, setNav }) => {
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
-				console.log(entry);
 				if (entry.isIntersecting) {
 					setVisibility(true);
 					setNav({

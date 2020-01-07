@@ -126,7 +126,7 @@
       align-items: center;
       max-height: 100vh;
       width: 100vw;
-      height: 90vh; }
+      height: 100vh; }
     .nav__components--links {
       flex: 1;
       display: none;
@@ -273,9 +273,7 @@
 
 @media screen and (max-width: 1000px) {
   .section__header {
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    min-height: 100vh; }
     .section__header h1 {
       font-size: 4.5rem; }
     .section__header svg {
