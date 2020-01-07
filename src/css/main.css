@@ -179,7 +179,7 @@
   0% {
     opacity: 0; }
   100% {
-    opacity: 0.8; } }
+    opacity: 1; } }
 
 @media screen and (min-width: 751px) {
   .section__header {
@@ -690,7 +690,7 @@
         background: #fff;
         box-shadow: 0 2px 2px #4d4d4d;
         min-height: 20rem;
-        min-width: 50vw;
+        min-width: 70vw;
         max-width: 80vw;
         display: flex;
         flex-direction: column;

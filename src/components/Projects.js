@@ -98,11 +98,7 @@ const Projects = ({ projectsRef, setNav }) => {
 					});
 				}
 			},
-			{
-				root: null,
-				rootMargin: '0px',
-				threshold: 1,
-			}
+			{ rootMargin: '0px 0px -200px 0px', threshold: 1 }
 		);
 		if (projectsRef.current) {
 			observer.observe(projectsRef.current);
