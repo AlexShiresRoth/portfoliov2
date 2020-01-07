@@ -384,14 +384,16 @@
         display: flex;
         flex-direction: column;
         margin: 0;
-        justify-content: space-around; }
+        justify-content: space-around;
+        max-height: 35rem; }
         .section__projects--container--item--image-container {
           width: 100%;
           margin: 0rem 0;
           box-shadow: 0 5px 10px #b3b3b3;
           position: relative;
           display: grid;
-          min-height: 40vh; }
+          min-height: 40vh;
+          max-height: 35rem; }
           .section__projects--container--item--image-container--image {
             height: 100%;
             width: 100%;
@@ -403,7 +405,8 @@
             .section__projects--container--item--image-container--image img {
               height: 100%;
               width: 100%;
-              object-fit: cover; }
+              object-fit: cover;
+              max-height: 35rem; }
         .section__projects--container--item--info {
           margin: 0rem;
           position: absolute;
