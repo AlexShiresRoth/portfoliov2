@@ -77,10 +77,7 @@ const Header = ({ headerRef, setNav }) => {
 					className="section__header--title-and-desc--back"
 					style={{ ...fade, ...rotate }}
 				></animated.div>
-				<animated.div
-					className="section__header--title-and-desc--text-container"
-					style={{ ...slideInFromLeft, ...fade }}
-				>
+				<animated.div className="section__header--title-and-desc--text-container" style={{ ...fade }}>
 					<h1>Hey,</h1>
 					<div className="section__header--title-and-desc--text-container--about">
 						<p>

@@ -70,10 +70,12 @@
 						background: rgba(0, 0, 0, 0.92);
 						max-height: 15rem;
 						align-self: end;
+
 						&--title {
 							display: flex;
 							flex-direction: column;
 							justify-content: flex-start;
+							margin: 0.5rem;
 							&--separator {
 								display: block;
 								height: 2px;
@@ -89,6 +91,7 @@
 							}
 						}
 						& p {
+							margin: 0.5rem;
 							color: #f3f3f3;
 							font-size: 1.1rem;
 						}
@@ -96,10 +99,10 @@
 							display: flex;
 							flex-direction: row;
 							justify-content: flex-start;
+							margin: 0.5rem;
 							& a {
-								font-size: 1.5rem;
+								font-size: 2rem;
 								color: $brand-secondary;
-								margin: 0.5rem 0 0.5rem 0.5rem;
 								&:hover {
 									color: lighten($brand-secondary, 10%);
 									cursor: pointer;
@@ -121,7 +124,6 @@
 				flex-direction: column;
 				margin: 0;
 				justify-content: space-around;
-				max-height: 20rem;
 				&--image-container {
 					width: 100%;
 					margin: 0rem 0;
@@ -129,13 +131,20 @@
 					position: relative;
 					display: grid;
 					min-height: 20rem;
-					max-height: 20rem;
 					&--image {
 						& img {
 							height: 100%;
 							width: 100%;
 							object-fit: cover;
-							max-height: 20rem;
+						}
+					}
+				}
+				&--info {
+					&--description {
+						&--links {
+							& a {
+								font-size: 2rem;
+							}
 						}
 					}
 				}
@@ -196,11 +205,10 @@
 				&--info {
 					margin: 0rem;
 					position: absolute;
+					bottom: 0;
+					left: 0;
 					display: grid;
 					grid-template-rows: 1fr;
-					justify-items: end;
-					align-content: end;
-					height: 100%;
 					width: 100%;
 					&--description {
 						padding: 0.5rem;
@@ -235,7 +243,7 @@
 							flex-direction: row;
 							justify-content: flex-start;
 							& a {
-								font-size: 1.3rem;
+								font-size: 1.7rem;
 								color: $brand-secondary;
 								margin: 0.5rem;
 								&:hover {

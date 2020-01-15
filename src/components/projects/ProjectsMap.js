@@ -12,9 +12,11 @@ export const ProjectsMap = ({ projects }) => {
 				<div className="section__projects--container--item--image-container">
 					{project.img.map((img, i) => {
 						return (
-							<figure key={i} className="section__projects--container--item--image-container--image">
-								<img src={`${img}`} alt={`${project.title}`} />
-							</figure>
+							<a href={project.url} target="_blank" rel="noopener noreferrer">
+								<figure key={i} className="section__projects--container--item--image-container--image">
+									<img src={`${img}`} alt={`${project.title}`} />
+								</figure>
+							</a>
 						);
 					})}
 					<div className="section__projects--container--item--info">
