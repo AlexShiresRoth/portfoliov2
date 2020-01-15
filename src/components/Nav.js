@@ -63,7 +63,7 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 			left: 0,
 			behavior: 'smooth',
 		});
-		toggle(!show);
+		toggle(false);
 	};
 
 	return (
