@@ -5,6 +5,7 @@
 		justify-content: center;
 		align-items: center;
 		background: $dark-orange;
+		min-height: 100vh;
 		&--container {
 			height: 100%;
 			width: 100%;
@@ -29,7 +30,7 @@
 				background: #fff;
 				box-shadow: 0 2px 2px darken(#666, 10%);
 				min-height: 20rem;
-				min-width: 50vw;
+				min-width: 70vw;
 				max-width: 80vw;
 				display: flex;
 				flex-direction: column;

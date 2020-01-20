@@ -54,6 +54,7 @@ const Header = ({ headerRef, setNav }) => {
 
 		const observer = new IntersectionObserver(
 			([entry]) => {
+				console.log(entry);
 				if (entry.isIntersecting) {
 					setNav({
 						navPosition: false,
@@ -61,11 +62,8 @@ const Header = ({ headerRef, setNav }) => {
 					});
 				}
 			},
-			{
-				root: null,
-				rootMargin: '0px',
-				threshold: 1,
-			}
+
+			{ rootMargin: '0px 0px 0px 0px', threshold: 1 }
 		);
 		if (headerRef.current) {
 			observer.observe(headerRef.current);
@@ -79,10 +77,7 @@ const Header = ({ headerRef, setNav }) => {
 					className="section__header--title-and-desc--back"
 					style={{ ...fade, ...rotate }}
 				></animated.div>
-				<animated.div
-					className="section__header--title-and-desc--text-container"
-					style={{ ...slideInFromLeft, ...fade }}
-				>
+				<animated.div className="section__header--title-and-desc--text-container" style={{ ...fade }}>
 					<h1>Hey,</h1>
 					<div className="section__header--title-and-desc--text-container--about">
 						<p>

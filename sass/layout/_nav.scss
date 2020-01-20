@@ -149,7 +149,7 @@
 			align-items: center;
 			max-height: 100vh;
 			width: 100vw;
-			height: 90vh;
+			height: 100vh;
 		}
 		&--links {
 			flex: 1;
@@ -224,6 +224,6 @@
 		opacity: 0;
 	}
 	100% {
-		opacity: 0.8;
+		opacity: 1;
 	}
 }

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import smoothscroll from "smoothscroll-polyfill";
 
+smoothscroll.polyfill();
 const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
   const [show, toggle] = useState(false);
 
@@ -55,27 +57,31 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
   );
   const mobileMenu = (
     <div className={show ? "mobile-menu show" : "mobile-menu hide"}>
-      <a onTouchStart={() => handleNavClick()} onClick={() => handleNavClick()}>
+      <a
+        onTouchStart={() => handleNavClick()}
+        onClick={() => handleNavClick()}
+        href="#!"
+      >
         Home
       </a>
       <a
         onTouchStart={() => handleNavClick(projectsRef)}
         onClick={() => handleNavClick(projectsRef)}
-        href
+        href="#!"
       >
         Projects
       </a>
       <a
         onTouchStart={() => handleNavClick(skillsRef)}
         onClick={() => handleNavClick(skillsRef)}
-        href
+        href="#!"
       >
         Skills
       </a>
       <a
         onTouchStart={() => handleNavClick(contactRef)}
         onClick={() => handleNavClick(contactRef)}
-        href
+        href="#!"
       >
         Contact
       </a>
@@ -84,10 +90,11 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 
   const handleNavClick = ref => {
     window.scrollTo({
-      top: ref ? ref.current.offsetTop : 0,
+      top: ref ? ref.current.offsetTop - 70 : 0,
       left: 0,
       behavior: "smooth"
     });
+    toggle(false);
   };
 
   return (
@@ -100,7 +107,7 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
         <a
           onTouchStart={() => handleNavClick()}
           onClick={() => handleNavClick()}
-          href="#"
+          href="#!"
           className={active === "Home" ? "active" : null}
         >
           Home
@@ -108,7 +115,7 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
         <a
           onTouchStart={() => handleNavClick(projectsRef)}
           onClick={() => handleNavClick(projectsRef)}
-          href="#"
+          href="#!"
           className={active === "Projects" ? "active" : null}
         >
           Projects
@@ -116,7 +123,7 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
         <a
           onTouchStart={() => handleNavClick(skillsRef)}
           onClick={() => handleNavClick(skillsRef)}
-          href="#"
+          href="#!"
           className={active === "Skills" ? "active" : null}
         >
           Skills
@@ -124,7 +131,7 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
         <a
           onTouchStart={() => handleNavClick(contactRef)}
           onClick={() => handleNavClick(contactRef)}
-          href="#"
+          href="#!"
           className={active === "Contact" ? "active" : null}
         >
           Contact

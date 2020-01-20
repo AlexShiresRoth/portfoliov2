@@ -1,45 +1,12 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React from 'react';
 
-const HeaderTag = props => {
-	const tags = [{ title: 'Self Taught Web Developer' }, { title: 'Freelancer' }, { title: 'Indie Game Dev' }];
-
-	const [tag, setTag] = useState(tags[0].title);
-
-	const [visibility, setVisibility] = useState(0);
-
-	const fadeInAndOutTag = () => {
-		let index = 0;
-		let maxIndex = tags.length;
-
-		setTimeout(() => {
-			setVisibility(1);
-		}, 1500);
-
-		setInterval(() => {
-			if (index >= maxIndex) index = 0;
-			setTag(tags[index].title);
-			index++;
-
-			setTimeout(() => {
-				setVisibility(1);
-			}, 10);
-
-			setTimeout(() => {
-				setVisibility(0);
-			}, 3000);
-		}, 4000);
-
-		return clearInterval();
-	};
-
-	useEffect(() => {
-		fadeInAndOutTag();
-	}, []);
+const HeaderTag = () => {
+	const tags = [{ title: 'Full Stack Dev' }, { title: 'Front End Dev' }, { title: 'Indie Game Dev' }];
 
 	return (
-		<Fragment>
-			<span style={{ opacity: visibility, transition: 'all .5s ease-in-out' }}>{tag}</span>
-		</Fragment>
+		<>
+			<span>{tags[1].title}</span>
+		</>
 	);
 };
 
