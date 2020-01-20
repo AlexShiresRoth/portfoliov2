@@ -130,8 +130,8 @@ const Contact = ({ contactRef, setNav }) => {
         >
           <div className="section__contact--container--form--column">
             <label>Name</label>
-            <div className="section__contact--container--form--input-row">
-              <div className="section__contact--container--form--input-row--icon-box">
+            <div className="section__contact--container--form--column--input-row">
+              <div className="section__contact--container--form--column--input-row--icon-box">
                 <i className="far fa-user"></i>
               </div>
               <input
@@ -146,8 +146,8 @@ const Contact = ({ contactRef, setNav }) => {
           </div>
           <div className="section__contact--container--form--column">
             <label>Email</label>
-            <div className="section__contact--container--form--input-row">
-              <div className="section__contact--container--form--input-row--icon-box">
+            <div className="section__contact--container--form--column--input-row">
+              <div className="section__contact--container--form--column--input-row--icon-box">
                 <i className="far fa-envelope"></i>
               </div>
               <input
@@ -160,18 +160,21 @@ const Contact = ({ contactRef, setNav }) => {
               />
             </div>
           </div>
-          <div className="section__contact--container--form--input-row">
-            <textarea
-              name="message"
-              type="text"
-              placeholder="How Can We Make this Happen?"
-              rows="10"
-              value={message}
-              onChange={e => handleInput(e)}
-              required
-            />
+          <div className="section__contact--container--form--column">
+            <label>Message</label>
+            <div className="section__contact--container--form--column--input-row">
+              <textarea
+                name="message"
+                type="text"
+                placeholder="How Can We Make this Happen?"
+                rows="10"
+                value={message}
+                onChange={e => handleInput(e)}
+                required
+              />
+            </div>
           </div>
-          <div className="section__contact--container--form--input-row">
+          <div className="section__contact--container--form--column--input-row">
             <button>Send</button>
           </div>
         </form>

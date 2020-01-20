@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import smoothscroll from "smoothscroll-polyfill";
 
 smoothscroll.polyfill();
+
 const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
   const [show, toggle] = useState(false);
 

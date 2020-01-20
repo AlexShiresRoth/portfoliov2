@@ -682,7 +682,7 @@
         width: 15vw; }
       .section__contact--container h2 {
         color: #fff;
-        font-family: 'Raleway';
+        font-family: "Raleway";
         margin: 1rem 0;
         font-size: 4rem; }
       .section__contact--container--form {
@@ -696,71 +696,78 @@
         flex-direction: column;
         justify-content: center;
         padding: 2rem; }
-        .section__contact--container--form--input-row {
-          margin: 1rem 2rem;
+        .section__contact--container--form--column {
           display: flex;
-          flex-direction: row;
-          justify-content: center; }
-          .section__contact--container--form--input-row--icon-box {
-            background: #001c38;
+          flex-direction: column;
+          width: 100%; }
+          .section__contact--container--form--column label {
+            font-size: 2vw;
+            color: #001c38; }
+          .section__contact--container--form--column--input-row {
+            margin: 1rem 2rem;
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            min-height: 2.5rem;
-            min-width: 2.5rem; }
-            .section__contact--container--form--input-row--icon-box i {
+            justify-content: center; }
+            .section__contact--container--form--column--input-row--icon-box {
+              background: #001c38;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              min-height: 2.5rem;
+              min-width: 2.5rem; }
+              .section__contact--container--form--column--input-row--icon-box i {
+                color: #fff;
+                font-size: 1.5rem;
+                padding: 1rem; }
+            .section__contact--container--form--column--input-row input {
+              border: 1px solid #e1e1e1;
+              transition: all 0.2s ease;
+              min-height: 2.5rem;
+              background: #eee;
+              width: 100%;
+              padding: 1.6rem;
+              font-size: 16px; }
+              .section__contact--container--form--column--input-row input:focus {
+                outline: none;
+                border: 1px solid #000b76; }
+              .section__contact--container--form--column--input-row input:hover {
+                border: 1px solid #000b76; }
+            .section__contact--container--form--column--input-row textarea {
+              border: 1px solid #eee;
+              background: #eee;
+              transition: all 0.2s ease;
+              padding: 1rem;
+              width: 100%;
+              font-size: 16px; }
+              .section__contact--container--form--column--input-row textarea:focus {
+                outline: none;
+                border: 1px solid #000b76; }
+              .section__contact--container--form--column--input-row textarea:hover {
+                border: 1px solid #000b76; }
+            .section__contact--container--form--column--input-row button {
+              padding: 1rem 2rem;
               color: #fff;
-              font-size: 1.5rem;
-              padding: 1rem; }
-          .section__contact--container--form--input-row input {
-            border: 1px solid #e1e1e1;
-            transition: all 0.2s ease;
-            min-height: 2.5rem;
-            background: #eee;
-            width: 100%;
-            padding: 1.6rem;
-            font-size: 16px; }
-            .section__contact--container--form--input-row input:focus {
-              outline: none;
-              border: 1px solid #000b76; }
-            .section__contact--container--form--input-row input:hover {
-              border: 1px solid #000b76; }
-          .section__contact--container--form--input-row textarea {
-            border: 1px solid #eee;
-            background: #eee;
-            transition: all 0.2s ease;
-            padding: 1rem;
-            width: 100%;
-            font-size: 16px; }
-            .section__contact--container--form--input-row textarea:focus {
-              outline: none;
-              border: 1px solid #000b76; }
-            .section__contact--container--form--input-row textarea:hover {
-              border: 1px solid #000b76; }
-          .section__contact--container--form--input-row button {
-            padding: 1rem 2rem;
-            color: #fff;
-            background: transparent;
-            border: 3px solid #001c38;
-            transition: all 0.2s ease;
-            width: 100%;
-            text-transform: uppercase;
-            color: #001c38;
-            font-weight: 700;
-            letter-spacing: 2px;
-            transition: all 0.3s ease-in-out; }
-            .section__contact--container--form--input-row button:hover {
-              background: #002951;
-              border: 3px solid #002951;
-              cursor: pointer;
-              color: #fff;
-              font-weight: 500; }
-            .section__contact--container--form--input-row button:active {
-              background: #00509e;
-              border: 3px solid #00509e;
-              color: #fff;
-              font-weight: 500; } }
+              background: transparent;
+              border: 3px solid #001c38;
+              transition: all 0.2s ease;
+              width: 100%;
+              text-transform: uppercase;
+              color: #001c38;
+              font-weight: 700;
+              letter-spacing: 2px;
+              transition: all 0.3s ease-in-out; }
+              .section__contact--container--form--column--input-row button:hover {
+                background: #002951;
+                border: 3px solid #002951;
+                cursor: pointer;
+                color: #fff;
+                font-weight: 500; }
+              .section__contact--container--form--column--input-row button:active {
+                background: #00509e;
+                border: 3px solid #00509e;
+                color: #fff;
+                font-weight: 500; } }
 
 @media screen and (max-width: 750px) {
   .section__contact--container h2 {
@@ -790,7 +797,7 @@
         color: #fff;
         margin: 1rem 0;
         font-size: 2rem;
-        font-family: 'Raleway'; }
+        font-family: "Raleway"; }
       .section__contact--container--form {
         margin: 2rem 0;
         background: #fff;
@@ -801,13 +808,15 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 1rem; }
-        .section__contact--container--form--input-row {
+        .section__contact--container--form--column label {
+          font-size: 5vw; }
+        .section__contact--container--form--column--input-row {
           margin: 1rem 0;
           width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: center; }
-          .section__contact--container--form--input-row--icon-box {
+          .section__contact--container--form--column--input-row--icon-box {
             background: #001c38;
             display: flex;
             flex-direction: row;
@@ -815,36 +824,36 @@
             align-items: center;
             min-height: 2.5rem;
             min-width: 2.5rem; }
-            .section__contact--container--form--input-row--icon-box i {
+            .section__contact--container--form--column--input-row--icon-box i {
               color: #fff;
               font-size: 1.1rem;
-              padding: 0.5rem; }
-          .section__contact--container--form--input-row input {
+              padding: 1rem; }
+          .section__contact--container--form--column--input-row input {
             border: 1px solid #e1e1e1;
             transition: all 0.2s ease;
             min-height: 2.5rem;
             background: #eee;
             width: 100%;
-            padding: 0.5rem;
+            padding: 1rem;
             font-size: 16px; }
-            .section__contact--container--form--input-row input:focus {
+            .section__contact--container--form--column--input-row input:focus {
               outline: none;
               border: 1px solid #000b76; }
-            .section__contact--container--form--input-row input:hover {
+            .section__contact--container--form--column--input-row input:hover {
               border: 1px solid #000b76; }
-          .section__contact--container--form--input-row textarea {
+          .section__contact--container--form--column--input-row textarea {
             border: 1px solid #eee;
             background: #eee;
             transition: all 0.2s ease;
             padding: 0.5rem;
             width: 100%;
             font-size: 16px; }
-            .section__contact--container--form--input-row textarea:focus {
+            .section__contact--container--form--column--input-row textarea:focus {
               outline: none;
               border: 1px solid #000b76; }
-            .section__contact--container--form--input-row textarea:hover {
+            .section__contact--container--form--column--input-row textarea:hover {
               border: 1px solid #000b76; }
-          .section__contact--container--form--input-row button {
+          .section__contact--container--form--column--input-row button {
             padding: 1rem 2rem;
             color: #fff;
             background: transparent;
@@ -856,13 +865,13 @@
             font-weight: 700;
             letter-spacing: 2px;
             transition: all 0.3s ease-in-out; }
-            .section__contact--container--form--input-row button:hover {
+            .section__contact--container--form--column--input-row button:hover {
               background: #002951;
               border: 3px solid #002951;
               cursor: pointer;
               color: #fff;
               font-weight: 500; }
-            .section__contact--container--form--input-row button:active {
+            .section__contact--container--form--column--input-row button:active {
               background: #00509e;
               border: 3px solid #00509e;
               color: #fff;
