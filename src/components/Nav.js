@@ -43,16 +43,16 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 	);
 	const mobileMenu = (
 		<div className={show ? 'mobile-menu show' : 'mobile-menu hide'}>
-			<a onTouchStart={() => handleNavClick()} onClick={() => handleNavClick()} href="#!">
+			<a onClick={() => handleNavClick()} href="#!">
 				Home
 			</a>
-			<a onTouchStart={() => handleNavClick(projectsRef)} onClick={() => handleNavClick(projectsRef)} href="#!">
+			<a onClick={() => handleNavClick(projectsRef)} href="#!">
 				Projects
 			</a>
-			<a onTouchStart={() => handleNavClick(skillsRef)} onClick={() => handleNavClick(skillsRef)} href="#!">
+			<a onClick={() => handleNavClick(skillsRef)} href="#!">
 				Skills
 			</a>
-			<a onTouchStart={() => handleNavClick(contactRef)} onClick={() => handleNavClick(contactRef)} href="#!">
+			<a onClick={() => handleNavClick(contactRef)} href="#!">
 				Contact
 			</a>
 		</div>
@@ -74,16 +74,10 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 				<p>AlexRoth productions</p>
 			</div>
 			<div className="nav__components--links">
-				<a
-					onTouchStart={() => handleNavClick()}
-					onClick={() => handleNavClick()}
-					href="#!"
-					className={active === 'Home' ? 'active' : null}
-				>
+				<a onClick={() => handleNavClick()} href="#!" className={active === 'Home' ? 'active' : null}>
 					Home
 				</a>
 				<a
-					onTouchStart={() => handleNavClick(projectsRef)}
 					onClick={() => handleNavClick(projectsRef)}
 					href="#!"
 					className={active === 'Projects' ? 'active' : null}
@@ -91,7 +85,6 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 					Projects
 				</a>
 				<a
-					onTouchStart={() => handleNavClick(skillsRef)}
 					onClick={() => handleNavClick(skillsRef)}
 					href="#!"
 					className={active === 'Skills' ? 'active' : null}
@@ -99,7 +92,6 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 					Skills
 				</a>
 				<a
-					onTouchStart={() => handleNavClick(contactRef)}
 					onClick={() => handleNavClick(contactRef)}
 					href="#!"
 					className={active === 'Contact' ? 'active' : null}
