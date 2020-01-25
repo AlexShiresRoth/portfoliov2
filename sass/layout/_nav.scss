@@ -188,12 +188,12 @@
 				transform-origin: 0% 0%;
 				transform-box: fill-box;
 				opacity:0;
-				transform: translate(-100vw);
+				transform: translate(100vw);
 				stroke-dasharray: 1;
 				stroke-dashoffset: 100;
 			}
 			& path:nth-child(2) {
-				transform-origin: 35% 35%;
+				transform-origin: 35% 42%;
 				transform: rotate(45deg);
 			}
 			& path:nth-child(3) {
