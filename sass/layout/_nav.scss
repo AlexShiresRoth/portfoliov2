@@ -184,16 +184,19 @@
 		& .rotated {
 			& path:nth-child(1) {
 				transform-origin: 57% 50%;
+				transform-box: fill-box;
 				transform: rotate(45deg);
 			}
 			& path:nth-child(2) {
 				transform-origin: 0% 0%;
+				transform-box: fill-box;
 				transform: translate(-100vw);
 				stroke-dasharray: 1;
 				stroke-dashoffset: 100;
 			}
 			& path:nth-child(3) {
 				transform-origin: 20% 50%;
+				transform-box: fill-box;
 				transform: rotate(-45deg);
 			}
 		}
