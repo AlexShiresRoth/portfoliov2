@@ -145,18 +145,22 @@
         .nav__components--links--mobile:hover {
           cursor: pointer; }
         .nav__components--links--mobile svg {
+          overflow: visible;
           width: 3rem;
           max-width: 3rem; }
         .nav__components--links--mobile path {
+          opacity: 1;
           transition: all 0.5s ease-in-out; }
     .nav__components .rotated path:nth-child(1) {
-      transform-origin: 57% 50%;
-      transform: rotate(45deg); }
-    .nav__components .rotated path:nth-child(2) {
       transform-origin: 0% 0%;
-      transform: translate(-100vw);
+      transform-box: fill-box;
+      opacity: 0;
+      transform: translate(100vw);
       stroke-dasharray: 1;
       stroke-dashoffset: 100; }
+    .nav__components .rotated path:nth-child(2) {
+      transform-origin: 35% 42%;
+      transform: rotate(45deg); }
     .nav__components .rotated path:nth-child(3) {
       transform-origin: 20% 50%;
       transform: rotate(-45deg); } }
@@ -296,6 +300,7 @@
       justify-items: start;
       align-content: center;
       padding: 1rem;
+      margin: 5rem 0;
       height: 100vh;
       opacity: 0;
       position: relative;
