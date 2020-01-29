@@ -14,7 +14,7 @@ export const apps = [
 		tech: 'built with MongoDB Atlas, Sass, Express, Javascript, NodeJS, and PassportJS.',
 		desc: 'Fully functional and responsive CRUD app, ',
 		img: [
-			'https://res-console.cloudinary.com/snackmanproductions/thumbnails/transform/v1/image/upload/Y19zY2FsZSxxXzU4LHdfOTA0/v1580267213/cG9ydGZvbGlvLzIwMjAtMDEtMjhfeHFmc2pk/template_primary',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/v1580267213/portfolio/2020-01-28_xqfsjd.png',
 		],
 		url: 'https://www.progressjournalsapp.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/progress-journal',
