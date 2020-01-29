@@ -59,12 +59,12 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 	);
 
 	const handleNavClick = ref => {
+		toggle(false);
 		window.scrollTo({
 			top: ref ? ref.current.offsetTop - 70 : 0,
 			left: 0,
 			behavior: 'smooth',
 		});
-		toggle(false);
 	};
 
 	return (

@@ -37,12 +37,6 @@ const Header = ({ headerRef, setNav }) => {
 		to: { transform: 'rotate(-3deg)' },
 		from: { transform: 'rotate(0deg)' },
 	});
-	const slideInFromLeft = useSpring({
-		config: { duration: 500 },
-		delay: 700,
-		to: { transform: 'translateX(0vh)', opacity: 1 },
-		from: { transform: 'translateX(30vh)', opacity: 0 },
-	});
 	const slideUpLong = useSpring({
 		config: { duration: 500 },
 		delay: 900,
@@ -54,7 +48,6 @@ const Header = ({ headerRef, setNav }) => {
 
 		const observer = new IntersectionObserver(
 			([entry]) => {
-				console.log(entry);
 				if (entry.isIntersecting) {
 					setNav({
 						navPosition: false,
@@ -63,7 +56,7 @@ const Header = ({ headerRef, setNav }) => {
 				}
 			},
 
-			{ rootMargin: '0px 0px 0px 0px', threshold: 1 }
+			{ rootMargin: '0px', threshold: [0.5, 0.9, 0.9, 0.5] }
 		);
 		if (headerRef.current) {
 			observer.observe(headerRef.current);
