@@ -4,7 +4,7 @@ export const apps = [
 		tech: 'Built with ReactJS, GatsbyJS, Sass, and NodeJs. ',
 		desc: 'Dynamic and responsive website for a construction company.',
 		img: [
-			'https://res.cloudinary.com/snackmanproductions/image/upload/v1567980236/portfolio/2019-09-08_5_ciahbf.png',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_972/v1567980236/portfolio/2019-09-08_5_ciahbf.png',
 		],
 		url: 'http://www.italianobrosenterprise.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/italianobrosv2',
@@ -25,7 +25,7 @@ export const apps = [
 		desc: `Dynamic and responsive web app for finding ramen restaurants from search. 
         Integrated with Google Places/Maps API and`,
 		img: [
-			'https://res.cloudinary.com/snackmanproductions/image/upload/v1575660519/portfolio/2019-12-06_1_awxsjf.png',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_972/v1575660519/portfolio/2019-12-06_1_awxsjf.png',
 		],
 		url: 'https://send-noods.netlify.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/send-noods',
@@ -35,7 +35,7 @@ export const apps = [
 		desc: `Dynamic web app for checking out guitar effects pedals, utilizing the Reverb API and`,
 		tech: 'built with ReactJS and Redux.',
 		img: [
-			'https://res.cloudinary.com/snackmanproductions/image/upload/v1576456462/portfolio/2019-12-15_2_tv3vop.png',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_972/v1576456462/portfolio/2019-12-15_2_tv3vop.png',
 		],
 		url: 'https://pedal-dashboard.netlify.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/pedal-dash',
@@ -45,7 +45,7 @@ export const apps = [
 		tech: 'built with ReactJS, GatsbyJS, Sass, NodeJS.',
 		desc: `Responsive SPA for an exporting company,`,
 		img: [
-			'https://res.cloudinary.com/snackmanproductions/image/upload/v1572395030/portfolio/2019-10-29_kzfuqc.png',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_972/v1572395030/portfolio/2019-10-29_kzfuqc.png',
 		],
 		url: 'https://consurgointl.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/consurgointl',
