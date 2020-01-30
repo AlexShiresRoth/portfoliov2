@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway|Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway|Muli&display=swap');
 /////////////components///////////
 @import './base/mixins';
 @import './base/variables';
@@ -31,13 +31,13 @@ body {
 	background-attachment: fixed;
 }
 h1 {
-	font-family: 'Raleway';
-	font-weight: 300;
+	font-family: 'Muli';
+	font-weight: 700;
 }
 h2,
 h3 {
-	font-family: 'Oswald', sans-serif, serif;
-	font-weight: 300;
+	font-family: 'Muli', sans-serif, serif;
+	font-weight: 700;
 }
 @media screen and (max-width: 600px) {
 	h2 {

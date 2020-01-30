@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Raleway|Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Raleway|Muli&display=swap");
 .nav__components {
   top: 0;
   left: 0;
@@ -23,7 +23,8 @@
     flex: 2; }
     .nav__components .nav__logo p {
       color: #5000ca;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      font-weight: 700; }
     .nav__components .nav__logo svg {
       margin-right: 1rem;
       width: 3rem;
@@ -48,7 +49,8 @@
       padding: 1rem;
       transition: all 0.4s ease-in-out;
       position: relative;
-      text-decoration: none; }
+      text-decoration: none;
+      font-weight: 700; }
       .nav__components--links a::after {
         content: '';
         width: 0px;
@@ -366,7 +368,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f3f3f3;
+    background: #fff;
     box-shadow: 0 5px 5px #e9e9e9; }
     .section__projects--buttons {
       display: flex;
@@ -1033,13 +1035,13 @@ body {
   background-attachment: fixed; }
 
 h1 {
-  font-family: 'Raleway';
-  font-weight: 300; }
+  font-family: 'Muli';
+  font-weight: 700; }
 
 h2,
 h3 {
-  font-family: 'Oswald', sans-serif, serif;
-  font-weight: 300; }
+  font-family: 'Muli', sans-serif, serif;
+  font-weight: 700; }
 
 @media screen and (max-width: 600px) {
   h2 {
