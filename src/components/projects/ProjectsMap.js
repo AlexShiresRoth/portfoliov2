@@ -12,30 +12,28 @@ export const ProjectsMap = ({ projects }) => {
 				<div className="section__projects--container--item--image-container">
 					{project.img.map((img, i) => {
 						return (
-							<a href={project.url} target="_blank" rel="noopener noreferrer">
-								<figure key={i} className="section__projects--container--item--image-container--image">
-									<img src={`${img}`} alt={`${project.title}`} />
-								</figure>
+							<a key={i} href={project.url} target="_blank" rel="noopener noreferrer">
+								<img src={`${img}`} alt={`${project.title}`} />
 							</a>
 						);
 					})}
-					<div className="section__projects--container--item--info">
-						<div className="section__projects--container--item--info--description">
-							<div className="section__projects--container--item--info--description--title">
-								<h2>{project.title}</h2>
-								<div className="section__projects--container--item--info--description--title--separator"></div>
-							</div>
-							<p>
-								{project.desc} {project.tech}
-							</p>
-							<div className="section__projects--container--item--info--description--links">
-								<a href={project.url} target="_blank" rel="noopener noreferrer">
-									<Icon icon={externalLink} />
-								</a>
-								<a href={project.codeurl} target="_blank" rel="noopener noreferrer">
-									<Icon icon={githubIcon} />
-								</a>
-							</div>
+				</div>
+				<div className="section__projects--container--item--info">
+					<div className="section__projects--container--item--info--description">
+						<div className="section__projects--container--item--info--description--title">
+							<h2>{project.title}</h2>
+							<div className="section__projects--container--item--info--description--title--separator"></div>
+						</div>
+						<p>
+							{project.desc} {project.tech}
+						</p>
+						<div className="section__projects--container--item--info--description--links">
+							<a href={project.url} target="_blank" rel="noopener noreferrer">
+								<Icon icon={externalLink} />
+							</a>
+							<a href={project.codeurl} target="_blank" rel="noopener noreferrer">
+								<Icon icon={githubIcon} />
+							</a>
 						</div>
 					</div>
 				</div>
