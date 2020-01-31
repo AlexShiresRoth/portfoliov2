@@ -28,7 +28,7 @@ export const apps = [
         Integrated with Google Places/Maps API and`,
 		img: [
 			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_972/v1575660519/portfolio/2019-12-06_1_awxsjf.png',
-			'https://res-console.cloudinary.com/snackmanproductions/thumbnails/transform/v1/image/upload//v1580442882/cG9ydGZvbGlvLzIwMjAtMDEtMzBfMTBfZHlqdXBl/drilldown',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/v1580442882/portfolio/2020-01-30_10_dyjupe.png',
 		],
 		url: 'https://send-noods.netlify.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/send-noods',
@@ -39,7 +39,7 @@ export const apps = [
 		tech: 'built with ReactJS and Redux.',
 		img: [
 			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_972/v1576456462/portfolio/2019-12-15_2_tv3vop.png',
-			'https://res-console.cloudinary.com/snackmanproductions/thumbnails/transform/v1/image/upload//v1580443216/cG9ydGZvbGlvLzIwMjAtMDEtMzBfMTRfbnNpYzht/drilldown',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/v1580443216/portfolio/2020-01-30_14_nsic8m.png',
 		],
 		url: 'https://pedal-dashboard.netlify.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/pedal-dash',
@@ -50,7 +50,7 @@ export const apps = [
 		desc: `Responsive SPA for an exporting company,`,
 		img: [
 			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,h_566,q_58,w_994/v1580442667/portfolio/2019-10-29_kzfuqc.png',
-			'https://res-console.cloudinary.com/snackmanproductions/thumbnails/transform/v1/image/upload//v1580443289/cG9ydGZvbGlvLzIwMjAtMDEtMzBfMTJfeGFydXhi/drilldown',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/v1580443289/portfolio/2020-01-30_12_xaruxb.png',
 		],
 		url: 'https://consurgointl.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/consurgointl',
