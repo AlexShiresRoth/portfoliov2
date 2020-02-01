@@ -402,9 +402,10 @@
         position: relative; }
         .section__projects--container--item .section__projects--container--item--image-container a:nth-child(1) {
           background: transparent;
-          max-height: 40vh;
-          overflow: hidden; }
+          overflow: hidden;
+          display: flex; }
           .section__projects--container--item .section__projects--container--item--image-container a:nth-child(1) img {
+            height: 100%;
             width: 100%;
             object-fit: contain;
             transition: all 0.3s ease-in-out; }

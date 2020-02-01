@@ -45,9 +45,10 @@
 				position: relative;
 				& a:nth-child(1) {
 					background: transparent;
-					max-height: 40vh;
 					overflow: hidden;
+					display: flex;
 					& img {
+						height: 100%;
 						width: 100%;
 						object-fit: contain;
 						transition: all 0.3s ease-in-out;
