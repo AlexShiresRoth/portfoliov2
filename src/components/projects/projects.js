@@ -11,6 +11,18 @@ export const apps = [
 		codeurl: 'https://github.com/AlexShiresRoth/italianobrosv2',
 	},
 	{
+		title: 'Fancy Active Wear',
+		tech: 'built with SvelteJS and SCSS',
+		desc: 'Mock website for a fake clothing brand,',
+		img: [
+			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_53,w_1104/v1581450719/portfolio/2020-02-11_ii3g55.png',
+			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_55,w_1126/v1581450533/portfolio/2020-02-11_2_s1g3ff.png',
+		],
+		url: 'https://fancyactivewear.netlify.com/',
+		codeurl: 'https://github.com/AlexShiresRoth/clothingbrandapp',
+	},
+
+	{
 		title: 'Progress Journal',
 		tech: 'built with MongoDB Atlas, Sass, Express, Javascript, NodeJS, and PassportJS.',
 		desc: 'Fully functional and responsive CRUD app, ',
