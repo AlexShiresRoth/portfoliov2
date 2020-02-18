@@ -78,7 +78,7 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
     window.scrollTo({
       top: ref ? ref.current.offsetTop - 70 : 0,
       left: 0,
-      behavior: "auto"
+      behavior: "smooth"
     });
   };
 
