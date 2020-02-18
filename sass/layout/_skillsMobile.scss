@@ -53,6 +53,7 @@
 		justify-content: space-around;
 		align-items: center;
 		min-height: 20vh;
+		margin: 2rem 0;
 		&--heading {
 			width: 100%;
 			display: flex;
@@ -68,7 +69,7 @@
 			padding: 2rem 0;
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			background: #f3f3f3;
+			background: #fff;
 			box-shadow: 0 5px 5px darken(#eee, 2%);
 			gap: 1rem;
 			min-height: 30rem;
