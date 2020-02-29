@@ -6,7 +6,7 @@ const Projects = lazy(() => import('./Projects'));
 const Skills = lazy(() => import('./Skills'));
 const Contact = lazy(() => import('./Contact'));
 const Nav = lazy(() => import('./Nav'));
-
+const Footer = lazy(() => import('./Footer'));
 const Home = () => {
 	const projectsRef = useRef();
 	const skillsRef = useRef();
@@ -32,6 +32,7 @@ const Home = () => {
 			<Projects projectsRef={projectsRef} setNav={setNav} />
 			<Skills skillsRef={skillsRef} setNav={setNav} />
 			<Contact contactRef={contactRef} setNav={setNav} />
+			<Footer />
 		</Fragment>
 	);
 };
