@@ -7,11 +7,7 @@ import IntersectionObserver from 'intersection-observer-polyfill';
 const Projects = ({ projectsRef, setNav }) => {
 	const [visibility, setVisibility] = useState(false);
 
-	const [projects, loadProjects] = useState([]);
-
 	useEffect(() => {
-		loadProjects(apps);
-
 		const observer = new IntersectionObserver(
 			([entry]) => {
 				if (entry.isIntersecting) {
@@ -27,7 +23,7 @@ const Projects = ({ projectsRef, setNav }) => {
 		if (projectsRef.current) {
 			observer.observe(projectsRef.current);
 		}
-	}, [projectsRef, loadProjects, setNav]);
+	}, [setNav, projectsRef]);
 
 	return (
 		<section className="section__projects">
@@ -66,7 +62,7 @@ const Projects = ({ projectsRef, setNav }) => {
 						  }
 				}
 			>
-				<ProjectsMap projects={projects} />
+				<ProjectsMap projects={apps} />
 			</div>
 		</section>
 	);

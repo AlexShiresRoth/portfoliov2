@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../css/main.css';
 import IntersectionObserver from 'intersection-observer-polyfill';
@@ -23,8 +23,6 @@ const Header = ({ headerRef, setNav }) => {
 
 	const AnimatedIcons = animated(Icons);
 
-	const [icons, setIcons] = useState(urls);
-
 	//animations
 	const fade = useSpring({
 		config: { duration: 1000 },
@@ -44,8 +42,6 @@ const Header = ({ headerRef, setNav }) => {
 		from: { transform: 'translateY(30vh)', opacity: 0 },
 	});
 	useEffect(() => {
-		setIcons(urls);
-
 		const observer = new IntersectionObserver(
 			([entry]) => {
 				if (entry.isIntersecting) {
@@ -61,7 +57,7 @@ const Header = ({ headerRef, setNav }) => {
 		if (headerRef.current) {
 			observer.observe(headerRef.current);
 		}
-	}, [headerRef, setNav, setIcons, urls]);
+	}, [setNav, headerRef]);
 
 	return (
 		<animated.section className="section__header" style={fade} ref={headerRef}>
@@ -80,7 +76,7 @@ const Header = ({ headerRef, setNav }) => {
 					</div>
 				</animated.div>
 				<div className="separator"></div>
-				<AnimatedIcons icons={icons} slideUpLong={slideUpLong} />
+				<AnimatedIcons icons={urls} slideUpLong={slideUpLong} />
 			</animated.div>
 		</animated.section>
 	);

@@ -64,11 +64,7 @@ const Skills = ({ skillsRef, setNav }) => {
 		},
 	];
 
-	const [skills, setSkills] = useState([]);
-
 	useEffect(() => {
-		setSkills(skillsArr);
-
 		const observer = new IntersectionObserver(
 			([entry]) => {
 				if (entry.isIntersecting) {
@@ -84,7 +80,7 @@ const Skills = ({ skillsRef, setNav }) => {
 		if (skillsRef.current) {
 			observer.observe(skillsRef.current);
 		}
-	}, [skillsRef, setSkills, skillsArr, setNav]);
+	}, []);
 
 	return (
 		<section className="section__skills">
@@ -123,7 +119,7 @@ const Skills = ({ skillsRef, setNav }) => {
 						  }
 				}
 			>
-				<SkillsMap skills={skills} />
+				<SkillsMap skills={skillsArr} />
 			</div>
 		</section>
 	);

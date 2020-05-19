@@ -99,7 +99,7 @@ const Contact = ({ contactRef, setNav }) => {
 				observer.observe(contactRef.current);
 			}
 		}, 100);
-	}, [contactRef, setNav]);
+	}, [setNav, contactRef]);
 
 	return (
 		<div
