@@ -8,15 +8,9 @@ const Home = lazy(() => import('./components/Home'));
 
 const App = () => {
 	return (
-		<Fragment>
-			<Suspense fallback={<Loader />}>
-				<div>
-					<Router>
-						<Route exact path="/" component={() => <Home />} />
-					</Router>
-				</div>
-			</Suspense>
-		</Fragment>
+		<Router>
+			<Route exact path="/" component={() => <Home />} />
+		</Router>
 	);
 };
 
