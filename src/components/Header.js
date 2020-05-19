@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import '../css/main.css';
-
+import IntersectionObserver from 'intersection-observer-polyfill';
 import { Icons } from './reusable/Icons';
 import HeaderTag from './header/HeaderTag';
 
@@ -61,7 +61,7 @@ const Header = ({ headerRef, setNav }) => {
 		if (headerRef.current) {
 			observer.observe(headerRef.current);
 		}
-	}, []);
+	}, [headerRef, setNav, setIcons, urls]);
 
 	return (
 		<animated.section className="section__header" style={fade} ref={headerRef}>

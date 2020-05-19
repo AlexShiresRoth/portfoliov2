@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ProjectsMap } from './projects/ProjectsMap';
 import { apps } from './projects/projects';
 import '../css/main.css';
+import IntersectionObserver from 'intersection-observer-polyfill';
 
 const Projects = ({ projectsRef, setNav }) => {
 	const [visibility, setVisibility] = useState(false);
@@ -26,7 +27,7 @@ const Projects = ({ projectsRef, setNav }) => {
 		if (projectsRef.current) {
 			observer.observe(projectsRef.current);
 		}
-	}, []);
+	}, [projectsRef, loadProjects, setNav]);
 
 	return (
 		<section className="section__projects">
