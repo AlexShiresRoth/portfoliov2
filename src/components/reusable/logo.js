@@ -26,18 +26,19 @@ export const logo = (
 			transform="translate(7.76 88.26) rotate(0.38)"
 			style={{ fontSize: '103px', fill: '#006', fontFamily: 'Open Sans, Open Sans' }}
 		>
-			{'{'}
-			<tspan x="39.03" y="0" style={{ fontSize: '80px' }}>
+			<tspan x="0%" y="0">{`{`}</tspan>
+
+			<tspan x="15%" y="0" style={{ fontSize: '80px' }}>
 				A
 			</tspan>
 
-			<tspan x="92.65" y="0">
+			<tspan x="38%" y="0">
 				|
 			</tspan>
-			<tspan x="146.38" y="0" style={{ fontSize: '80px' }}>
+			<tspan x="60%" y="0" style={{ fontSize: '80px' }}>
 				R
 			</tspan>
-			<tspan x="195.84" y="0">
+			<tspan x="80%" y="0">
 				}
 			</tspan>
 		</text>
