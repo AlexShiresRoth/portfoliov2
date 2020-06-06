@@ -170,6 +170,34 @@
 			position: relative;
 			background: #fff;
 			box-shadow: 0 1px 5px darken(#f3f3f3, 5%);
+			& button {
+				height: 3.5rem;
+				width: 14rem;
+				color: #fff;
+				background: $brand-secondary;
+				border: 2px solid $brand-secondary;
+				border-top-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				font-size: 1.2rem;
+				font-family: 'Muli';
+				transition: all 0.3s ease-in-out;
+				box-shadow: 0 1px 5px $brand-secondary;
+				& i {
+					font-size: 1.5rem;
+					margin-left: 0.5rem;
+				}
+				&:hover {
+					cursor: pointer;
+					box-shadow: 0 1px 15px darken($brand-secondary, 5%);
+					border-top-right-radius: 0px;
+					border-bottom-left-radius: 0px;
+					border-radius: 5px;
+				}
+				&:focus,
+				&:active {
+					outline: 0;
+				}
+			}
 			& .back {
 				position: absolute;
 				top: 0;
