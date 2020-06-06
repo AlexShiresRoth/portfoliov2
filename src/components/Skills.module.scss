@@ -1,3 +1,5 @@
+@import '../../sass/base/variables';
+
 @media screen and (min-width: 601px) {
 	.section__skills {
 		display: flex;
@@ -5,34 +7,34 @@
 		justify-content: center;
 		align-items: center;
 		margin: 6rem 0;
-		&--heading {
+		& .heading {
 			width: 100%;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			margin-bottom: 2rem;
 			& h2 {
-				color: $orange-color;
+				color: $brand-secondary;
 				font-size: 5rem;
 			}
 		}
-		&--container {
+		& .container {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 3rem;
-			min-height: 30rem;
-			width: 70vw;
+			min-height: 50rem;
+			min-width: 50vw;
 			background: #fff;
-			box-shadow: 0 5px 5px darken(#eee, 2%);
+			box-shadow: 0 1px 5px darken(#eee, 2%);
 			padding: 1rem;
-			&--skill-row--icon-block {
+			& .skill__row__icon_block {
 				display: flex;
 				flex-direction: row;
-				justify-content: center;
+				justify-content: space-around;
 				align-items: center;
-				box-shadow: 0 3px 3px darken(#eee, 2%);
+				box-shadow: 0 1px 5px darken(#eee, 2%);
 				padding: 1rem;
-				margin: 0 0.5rem;
+				margin: 1rem;
 				& svg {
 					font-size: 6rem;
 					color: darken($brand-secondary, 5%);
@@ -45,6 +47,20 @@
 		}
 	}
 }
+@media screen and (max-width: 950px) {
+	.section__skills {
+		& .container {
+			padding: 2rem 0;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			background: #fff;
+			box-shadow: 0 5px 5px darken(#eee, 2%);
+			gap: 1rem;
+			min-height: 50rem;
+			width: 90vw;
+		}
+	}
+}
 
 @media screen and (max-width: 750px) {
 	.section__skills {
@@ -54,40 +70,43 @@
 		align-items: center;
 		min-height: 20vh;
 		margin: 2rem 0;
-		&--heading {
+		& .heading {
 			width: 100%;
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
-
+			margin-bottom: 2rem;
 			& h2 {
-				color: $orange-color;
+				color: $brand-secondary;
 				font-size: 3rem;
 			}
 		}
-		&--container {
+		& .container {
 			padding: 2rem 0;
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(1, 1fr);
 			background: #fff;
 			box-shadow: 0 5px 5px darken(#eee, 2%);
-			gap: 1rem;
-			min-height: 30rem;
+			gap: 2rem;
+			justify-items: center;
+			min-height: 50rem;
 			width: 90vw;
-			&--skill-row--icon-block {
+			& .skill__row__icon_block {
 				display: flex;
 				flex-direction: row;
-				justify-content: center;
+				justify-content: space-around;
 				align-items: center;
 				box-shadow: 0 3px 3px darken(#eee, 2%);
 				margin: 0 0.5rem;
+				width: 80%;
+				padding: 1rem;
 				& svg {
-					font-size: 3.5rem;
+					font-size: 4rem;
 					color: darken($brand-secondary, 5%);
 				}
 				& h3 {
 					color: $orange-color;
-					font-size: 1.5rem;
+					font-size: 2rem;
 				}
 			}
 		}

@@ -12,30 +12,19 @@
 		align-items: center;
 		position: relative;
 		z-index: 0;
-        box-shadow: 0 1px 5px darken(#eee, 5%);
-        padding:2rem;
-		& .logo {
-			z-index: 1;
-			margin: 2rem;
-			max-width: 13rem;
-			max-height: 15rem;
-			align-self: center;
-			& img {
-				height: 100%;
-				width: 100%;
-			}
-		}
+		box-shadow: 0 1px 5px darken(#eee, 5%);
+		padding: 2rem;
 
 		& .title_and_desc {
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: auto;
-            gap: 2rem;
+			gap: 2rem;
 			justify-items: start;
 			align-content: flex-start;
 			padding: 3rem;
 			height: 100%;
-			margin:7rem 0;
+			margin: 7rem 0;
 			opacity: 0;
 			position: relative;
 			background: #fff;
@@ -50,6 +39,34 @@
 				box-shadow: 0 4px 4px darken(#f3f3f3, 10%);
 				padding: 2rem;
 				z-index: -1;
+			}
+			& button {
+				height: 3.5rem;
+				width: 14rem;
+				color: #fff;
+				background: $brand-secondary;
+				border: 2px solid $brand-secondary;
+				border-top-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				font-size: 1.2rem;
+				font-family: 'Muli';
+				transition: all 0.3s ease-in-out;
+				box-shadow: 0 1px 5px $brand-secondary;
+				& i {
+					font-size: 1.5rem;
+					margin-left: 0.5rem;
+				}
+				&:hover {
+					cursor: pointer;
+					box-shadow: 0 1px 15px darken($brand-secondary, 5%);
+					border-top-right-radius: 0px;
+					border-bottom-left-radius: 0px;
+					border-radius: 5px;
+				}
+				&:focus,
+				&:active {
+					outline: 0;
+				}
 			}
 			& .separator {
 				height: 2px;
@@ -75,9 +92,9 @@
 						width: 50vw;
 						color: #666;
 						font-size: 2rem;
-						font-weight: 700;
+						font-weight: 200;
 						z-index: 2;
-						line-height:2;
+						line-height: 2;
 					}
 					& span {
 						z-index: 2;
@@ -139,7 +156,7 @@
 
 @media screen and (max-width: 750px) {
 	.section__header {
-		min-height: 100vh;
+		min-height: 70vh;
 		& .title_and_desc {
 			display: grid;
 			grid-template-columns: 1fr;
@@ -147,10 +164,9 @@
 			gap: 2rem;
 			justify-items: start;
 			align-content: center;
-			padding: 1rem;
-			margin:5rem 0;
-			height: 100vh;
-			opacity: 0;
+			padding: 2rem 1rem;
+			margin: 10rem 0 6rem 0;
+			opacity: 1;
 			position: relative;
 			background: #fff;
 			box-shadow: 0 1px 5px darken(#f3f3f3, 5%);
@@ -174,8 +190,8 @@
 			& .text_container {
 				z-index: 2;
 				& h1 {
-                    font-size: 3rem;
-                    color: $brand-secondary;
+					font-size: 4rem;
+					color: $brand-secondary;
 					font-weight: 700;
 					margin: 1rem 0;
 				}
@@ -188,8 +204,8 @@
 						color: #666;
 						font-size: 2rem;
 						font-weight: 700;
-                        z-index: 2;
-                        line-height:2;
+						z-index: 2;
+						line-height: 2;
 					}
 					& span {
 						z-index: 2;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Modal from './modal/Modal';
-import '../css/main.css';
+import style from './Contact.module.scss';
 import IntersectionObserver from 'intersection-observer-polyfill';
 
 const Contact = ({ contactRef, setNav }) => {
@@ -104,7 +104,7 @@ const Contact = ({ contactRef, setNav }) => {
 	return (
 		<div
 			ref={contactRef}
-			className="section__contact"
+			className={style.section__contact}
 			style={
 				visibility
 					? {
@@ -118,14 +118,14 @@ const Contact = ({ contactRef, setNav }) => {
 			}
 		>
 			<Modal modalState={modalState} response={response} handleModalState={handleModalState} />
-			<div className="section__contact--container">
+			<div className={style.container}>
 				<h2>Want to work together?</h2>
-				<hr></hr>
-				<form onSubmit={(e) => formSubmit(e)} className="section__contact--container--form">
-					<div className="section__contact--container--form--column">
+
+				<form onSubmit={(e) => formSubmit(e)} className={style.form}>
+					<div className={style.column}>
 						<label>Name</label>
-						<div className="section__contact--container--form--column--input-row">
-							<div className="section__contact--container--form--column--input-row--icon-box">
+						<div className={style.input__row}>
+							<div className={style.icon__box}>
 								<i className="far fa-user"></i>
 							</div>
 							<input
@@ -138,10 +138,10 @@ const Contact = ({ contactRef, setNav }) => {
 							/>
 						</div>
 					</div>
-					<div className="section__contact--container--form--column">
+					<div className={style.column}>
 						<label>Email</label>
-						<div className="section__contact--container--form--column--input-row">
-							<div className="section__contact--container--form--column--input-row--icon-box">
+						<div className={style.input__row}>
+							<div className={style.icon__box}>
 								<i className="far fa-envelope"></i>
 							</div>
 							<input
@@ -154,9 +154,9 @@ const Contact = ({ contactRef, setNav }) => {
 							/>
 						</div>
 					</div>
-					<div className="section__contact--container--form--column">
+					<div className={style.column}>
 						<label>Message</label>
-						<div className="section__contact--container--form--column--input-row">
+						<div className={style.input__row}>
 							<textarea
 								name="message"
 								type="text"
@@ -168,8 +168,10 @@ const Contact = ({ contactRef, setNav }) => {
 							/>
 						</div>
 					</div>
-					<div className="section__contact--container--form--column--input-row">
-						<button>Send</button>
+					<div className={style.column}>
+						<div className={style.input__row}>
+							<button>Send</button>
+						</div>
 					</div>
 				</form>
 			</div>

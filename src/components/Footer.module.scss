@@ -1,3 +1,4 @@
+@import '../../sass/base/variables';
 .footer__display {
 	display: flex;
 	flex-direction: row;
@@ -7,7 +8,7 @@
 	justify-content: space-around;
 	align-items: center;
 	min-height: 5rem;
-	&--left {
+	& .left {
 		& p {
 			color: $brand-secondary;
 			font-size: 1vw;
@@ -16,7 +17,7 @@
 			}
 		}
 	}
-	&--center {
+	& .center {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1rem;
@@ -27,7 +28,7 @@
 			}
 		}
 	}
-	&--right {
+	& .right {
 		display: flex;
 		& a {
 			color: $brand-secondary;
@@ -43,12 +44,12 @@
 		align-items: center;
 		flex-direction: column;
 		min-height: 7rem;
-		&--left {
+		& .left {
 			& p {
 				font-size: 5vw;
 			}
 		}
-		&--center {
+		& .center {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 1rem;
@@ -59,7 +60,7 @@
 				}
 			}
 		}
-		&--right {
+		& .right {
 			display: flex;
 			& a {
 				color: $brand-secondary;

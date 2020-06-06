@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './Footer.module.scss';
 
 const Footer = () => {
 	const urls = [
@@ -16,13 +17,13 @@ const Footer = () => {
 		},
 	];
 	return (
-		<footer className="footer__display">
-			<div className="footer__display--left">
+		<footer className={style.footer__display}>
+			<div className={style.left}>
 				<p>
 					Copyright Alex Roth <span>&copy;</span> 2020.
 				</p>
 			</div>
-			<div className="footer__display--center">
+			<div className={style.center}>
 				{urls.map((item, i) => {
 					return (
 						<a href={item.url} key={i} target="_blank" rel="noopener noreferrer">
@@ -31,7 +32,7 @@ const Footer = () => {
 					);
 				})}
 			</div>
-			<div className="footer__display--right">
+			<div className={style.right}>
 				<a href="mailto:alex@alexshiresroth.com" alt="email">
 					alex@alexshiresroth.com
 				</a>

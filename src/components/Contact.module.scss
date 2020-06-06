@@ -1,0 +1,169 @@
+@import '../../sass/base/variables';
+
+.section__contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: $dark-orange;
+	min-height: 100vh;
+	& .container {
+		height: 100%;
+		width: 100%;
+		padding: 2rem 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+
+		& h2 {
+			color: #fff;
+			font-family: 'Raleway';
+			margin: 1rem 0;
+			font-size: 4rem;
+			display: flex;
+			flex-direction: column;
+		}
+		& .form {
+			margin: 2rem 0;
+			background: #fff;
+			box-shadow: 0 2px 2px darken(#666, 10%);
+			min-height: 20rem;
+			min-width: 40vw;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 2rem;
+			& .column {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				& label {
+					font-size: 2rem;
+					color: $dark-blue;
+					&::after {
+						content: '*';
+						color: $brand-secondary;
+					}
+				}
+				& .input__row {
+					margin: 2rem 0rem;
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					& .icon__box {
+						background: transparent;
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						min-height: 2.5rem;
+						min-width: 2.5rem;
+						border-bottom: 2px solid $brand-secondary;
+						& i {
+							color: $dark-blue;
+							font-size: 2rem;
+							padding: 1rem;
+						}
+					}
+					& input {
+						border: 0;
+						border-bottom: 2px solid $brand-secondary;
+						transition: all 0.2s ease;
+						min-height: 2.5rem;
+						background: transparent;
+						width: 100%;
+						padding: 1.6rem;
+						font-size: 16px;
+						&:focus {
+							outline: 0;
+						}
+					}
+					& textarea {
+						border: 2px solid $brand-secondary;
+						background: transparent;
+						transition: all 0.2s ease;
+						padding: 1rem;
+						width: 100%;
+						font-size: 16px;
+						resize: none;
+						&:focus {
+							outline: 0;
+							border: 2px solid $orange-color;
+						}
+					}
+					& button {
+						padding: 1rem 2rem;
+						color: #fff;
+						background: lighten($dark-blue, 5%);
+						border: 3px solid lighten($dark-blue, 5%);
+						transition: all 0.2s ease;
+						width: 100%;
+						text-transform: uppercase;
+						font-weight: 500;
+						font-size: 2rem;
+						letter-spacing: 2px;
+						transition: all 0.3s ease-in-out;
+						&:hover {
+							cursor: pointer;
+							color: #fff;
+							font-weight: 500;
+							box-shadow: 0 1px 10px $dark-blue;
+							background: $dark-blue;
+						}
+						&:active {
+							background: lighten($dark-blue, 20%);
+							border: 3px solid lighten($dark-blue, 20%);
+							color: #fff;
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.section__contact {
+		& .container {
+			flex-direction: column;
+			& .form {
+				min-width: 50vw;
+			}
+		}
+	}
+}
+@media screen and (max-width: 750px) {
+	.section__contact {
+		& .container {
+			& h2 {
+				font-size: 4rem;
+			}
+			& .form {
+				min-width: 70vw;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section__contact {
+		& .container {
+			& h2 {
+				font-size: 2rem;
+				text-align: center;
+			}
+			& .form {
+				& .column {
+					& .input__row {
+						& button {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
