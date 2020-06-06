@@ -24,23 +24,21 @@ export const logo = (
 		/>
 		<text
 			transform="translate(7.76 83.26) rotate(0.38)"
-			style={{ fontSize: '103px', fill: '#006', fontFamily: 'Open Sans, Open Sans' }}
+			style={{
+				fontSize: '103px',
+				fill: '#006',
+				fontFamily: 'Open Sans, Open Sans',
+				display: 'flex',
+				justifyContent: 'space-around',
+			}}
 		>
-			<tspan x="0%" y="0">{`{`}</tspan>
+			<tspan>{`{`}</tspan>
 
-			<tspan x="15%" y="0" style={{ fontSize: '80px' }}>
-				A
-			</tspan>
+			<tspan style={{ fontSize: '80px' }}>A</tspan>
 
-			<tspan x="40%" y="-5%" style={{ fontSize: '80px' }}>
-				|
-			</tspan>
-			<tspan x="60%" y="0" style={{ fontSize: '80px' }}>
-				R
-			</tspan>
-			<tspan x="80%" y="0">
-				}
-			</tspan>
+			<tspan>|</tspan>
+			<tspan style={{ fontSize: '80px' }}>R</tspan>
+			<tspan>}</tspan>
 		</text>
 	</svg>
 );
