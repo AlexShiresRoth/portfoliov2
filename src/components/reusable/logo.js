@@ -29,7 +29,7 @@ export const logo = (
 				fill: '#006',
 				fontFamily: 'Open Sans, Open Sans',
 				display: 'flex',
-				justifyContent: 'space-around',
+				justifyContent: 'space-between',
 				width: '100%',
 			}}
 		>
