@@ -23,7 +23,7 @@ export const logo = (
 			style={{ fill: '#60c', stroke: '#60c', strokeMiterlimit: '10', strokeWidth: '4px' }}
 		/>
 		<text
-			transform="translate(7.76 88.26) rotate(0.38)"
+			transform="translate(7.76 83.26) rotate(0.38)"
 			style={{ fontSize: '103px', fill: '#006', fontFamily: 'Open Sans, Open Sans' }}
 		>
 			<tspan x="0%" y="0">{`{`}</tspan>
@@ -32,7 +32,7 @@ export const logo = (
 				A
 			</tspan>
 
-			<tspan x="38%" y="0">
+			<tspan x="40%" y="-5%" style={{ fontSize: '80px' }}>
 				|
 			</tspan>
 			<tspan x="60%" y="0" style={{ fontSize: '80px' }}>
