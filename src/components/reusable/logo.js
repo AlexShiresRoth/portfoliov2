@@ -31,7 +31,7 @@ export const logo = (
 				A
 			</tspan>
 
-			<tspan x="89.65" y="0">
+			<tspan x="92.65" y="0">
 				|
 			</tspan>
 			<tspan x="146.38" y="0" style={{ fontSize: '80px' }}>
