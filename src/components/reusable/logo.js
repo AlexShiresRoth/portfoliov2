@@ -30,6 +30,7 @@ export const logo = (
 				fontFamily: 'Open Sans, Open Sans',
 				display: 'flex',
 				justifyContent: 'space-around',
+				width: '100%',
 			}}
 		>
 			<tspan>{`{`}</tspan>
