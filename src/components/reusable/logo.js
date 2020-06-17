@@ -39,7 +39,7 @@ export const logo = (
 
 			<tspan>|</tspan>
 			<tspan style={{ fontSize: '80px' }}>R</tspan>
-			<tspan>}</tspan>
+			<tspan>{`}`}</tspan>
 		</text>
 	</svg>
 );
