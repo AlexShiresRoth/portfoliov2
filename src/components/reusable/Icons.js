@@ -10,9 +10,5 @@ export const Icons = ({ icons }) => {
     );
   });
 
-  return (
-    <div style={slideUpLong} className={style.icons}>
-      {renderIcons}
-    </div>
-  );
+  return <div className={style.icons}>{renderIcons}</div>;
 };
