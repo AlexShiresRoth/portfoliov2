@@ -5,20 +5,20 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	background: $dark-orange;
+	background: #fff;
 	min-height: 100vh;
 	& .container {
 		height: 100%;
 		width: 100%;
 		padding: 2rem 0;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
 
 		& h2 {
-			color: #fff;
+			color: $dark-blue;
 			font-family: 'Raleway';
 			margin: 1rem 0;
 			font-size: 4rem;
@@ -28,7 +28,6 @@
 		& .form {
 			margin: 2rem 0;
 			background: #fff;
-			box-shadow: 0 2px 2px darken(#666, 10%);
 			min-height: 20rem;
 			min-width: 40vw;
 			display: flex;
@@ -41,6 +40,7 @@
 				width: 100%;
 				& label {
 					font-size: 2rem;
+					font-weight:900;
 					color: $dark-blue;
 					&::after {
 						content: '*';
@@ -81,7 +81,8 @@
 						}
 					}
 					& textarea {
-						border: 2px solid $brand-secondary;
+						border: 0;
+						border-bottom: 2px solid $brand-secondary;
 						background: transparent;
 						transition: all 0.2s ease;
 						padding: 1rem;
@@ -96,8 +97,8 @@
 					& button {
 						padding: 1rem 2rem;
 						color: #fff;
-						background: lighten($dark-blue, 5%);
-						border: 3px solid lighten($dark-blue, 5%);
+						background: $brand-secondary;
+						border: 3px solid $brand-secondary;
 						transition: all 0.2s ease;
 						width: 100%;
 						text-transform: uppercase;
@@ -109,12 +110,12 @@
 							cursor: pointer;
 							color: #fff;
 							font-weight: 500;
-							box-shadow: 0 1px 10px $dark-blue;
-							background: $dark-blue;
+							box-shadow: 0 1px 10px $brand-secondary;
+							background: $brand-secondary;
 						}
 						&:active {
-							background: lighten($dark-blue, 20%);
-							border: 3px solid lighten($dark-blue, 20%);
+							background: lighten($brand-secondary, 20%);
+							border: 3px solid lighten($brand-secondary, 20%);
 							color: #fff;
 							font-weight: 500;
 						}

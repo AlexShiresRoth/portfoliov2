@@ -1,8 +1,21 @@
 export const apps = [
   {
+    title: "Artist Website",
+    tech:
+      "Built with ReactJS, Redux, StripeJS, JWT, Cloudinary, Sass and NodeJS.",
+    desc: `Website/Webapp that utlizes the Stripe API for a custom built store for handling only credit card checkout.
+       The app contains all CRUD operations and user authentication with JSON Webtokens.`,
+    img: [
+      "https://res.cloudinary.com/snackmanproductions/image/upload/v1593083321/portfolio/Screenshot_2020-06-25_07.00.37_pr10bu.jpg",
+      "https://res.cloudinary.com/snackmanproductions/image/upload/v1593087306/portfolio/Screenshot_2020-06-25_08.13.41_xsgcug.jpg",
+    ],
+    url: "https://gerrymckeveny.netlify.app/#/",
+    codeurl: "https://github.com/AlexShiresRoth/music-client",
+  },
+  {
     title: "Fill The Void Productions",
     tech: "built with ReactJS, Redux, ThreeJS, Sass, NodeJS.",
-    desc: `Website built for my freelance business,`,
+    desc: `Website created for my freelance business,`,
     img: [
       "https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_765,h_468/v1592321446/portfolio/Screenshot_2020-06-16_11.22.15_uspv4a.jpg",
       "https://res.cloudinary.com/snackmanproductions/image/upload/q_56/v1592321518/portfolio/Screenshot_2020-06-16_11.23.43_ii7lur.jpg",

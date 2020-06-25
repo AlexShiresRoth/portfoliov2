@@ -12,13 +12,16 @@ export const ProjectsMap = ({ projects }) => {
         <div
           className={style.section__projects__container__item__image__container}
         >
-          {project.img.map((img, i) => {
+          {project.img.map((img, index) => {
             return (
               <a
-                key={i}
+                key={index}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                className={
+                  (i + 1) % 2 === 0 && index > 0 ? style.right : style.left
+                }
               >
                 <img src={`${img}`} alt={`${project.title}`} />
               </a>
