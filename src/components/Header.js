@@ -71,13 +71,11 @@ const Header = ({ headerRef, setNav }) => {
           style={{ ...fade, ...rotate }}
         ></animated.div>
         <animated.div className={style.text_container} style={{ ...fade }}>
-          <h1>Hey,</h1>
+          <h1>
+            Hey, I'm Alex Rothenberg, a <HeaderTag /> from NY.
+          </h1>
           <div className={style.about}>
-            <p>
-              I'm Alex Rothenberg, a <HeaderTag /> from Long Island, NY.
-              Currently, I am working in the MERN stack and learning some game
-              development on the side. Check out my projects below.
-            </p>
+            <p>I'm passionate about all things javascript.</p>
           </div>
         </animated.div>
         <a
