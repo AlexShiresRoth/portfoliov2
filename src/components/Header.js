@@ -79,7 +79,7 @@ const Header = ({ headerRef, setNav }) => {
           </div>
         </animated.div>
         <a
-          href="https://res.cloudinary.com/snackmanproductions/image/upload/v1591413118/portfolio/Alex_Rothenberg_Resume_1_rlaujp.pdf"
+          href="https://res.cloudinary.com/snackmanproductions/image/upload/v1594236324/portfolio/Alex_Rothenberg_Resume_5_k0xhby.pdf"
           download="Alex Roth Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
