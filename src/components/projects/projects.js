@@ -67,16 +67,4 @@ export const apps = [
 		url: 'https://www.progressjournalsapp.com/',
 		codeurl: 'https://github.com/AlexShiresRoth/progress-journal',
 	},
-	{
-		title: 'Send Noods',
-		tech: 'built with ReactJS and Redux.',
-		desc: `Dynamic and responsive web app for finding ramen restaurants from search. 
-        Integrated with Google Places/Maps API and`,
-		img: [
-			'https://res.cloudinary.com/snackmanproductions/image/upload/c_scale,q_54,w_765,h_468/v1575660519/portfolio/2019-12-06_1_awxsjf.jpg',
-			'https://res.cloudinary.com/snackmanproductions/image/upload/v1580442882/portfolio/2020-01-30_10_dyjupe.jpg',
-		],
-		url: 'https://send-noods.netlify.com/',
-		codeurl: 'https://github.com/AlexShiresRoth/send-noods',
-	},
 ];
