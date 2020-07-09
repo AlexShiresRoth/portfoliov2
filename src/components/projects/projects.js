@@ -2,8 +2,7 @@ export const apps = [
 	{
 		title: 'Artist Website',
 		tech: 'Built with ReactJS, Redux, StripeJS, JWT, Cloudinary, Sass and NodeJS.',
-		desc: `Website/Webapp that utlizes the Stripe API for a custom built store for handling only credit card checkout.
-       The app contains all CRUD operations and user authentication with JSON Webtokens.`,
+		desc: `Musician website, with an e-commerce store and full CRUD operations.`,
 		img: [
 			'https://res.cloudinary.com/snackmanproductions/image/upload/v1593083321/portfolio/Screenshot_2020-06-25_07.00.37_pr10bu.jpg',
 			'https://res.cloudinary.com/snackmanproductions/image/upload/v1593087306/portfolio/Screenshot_2020-06-25_08.13.41_xsgcug.jpg',
