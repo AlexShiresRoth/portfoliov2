@@ -2,7 +2,7 @@ export const apps = [
 	{
 		title: 'Artist Website',
 		tech: 'Built with ReactJS, Redux, StripeJS, JWT, Cloudinary, Sass and NodeJS.',
-		desc: `Musician website, with an e-commerce store and full CRUD operations.`,
+		desc: `Website developed for a musician. The site includes an e-commerce store and full CRUD operations.`,
 		img: [
 			'https://res.cloudinary.com/snackmanproductions/image/upload/v1593083321/portfolio/Screenshot_2020-06-25_07.00.37_pr10bu.jpg',
 			'https://res.cloudinary.com/snackmanproductions/image/upload/v1593087306/portfolio/Screenshot_2020-06-25_08.13.41_xsgcug.jpg',
