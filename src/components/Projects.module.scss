@@ -37,6 +37,7 @@
 			&:nth-child(even) {
 				& .section__projects__container__item__image__container {
 					order: 1;
+					box-shadow: 0 1px 20px darken(#eee, 10%);
 				}
 			}
 			& .section__projects__container__item__image__container {
@@ -48,7 +49,7 @@
 				position: relative;
 				& a:nth-child(1) {
 					background: transparent;
-					overflow: hidden;
+					overflow: visible;
 					display: flex;
 					width: 100%;
 					display: flex;
@@ -57,7 +58,7 @@
 						width: 100%;
 						object-fit: contain;
 						transition: all 0.3s ease-in-out;
-						filter: drop-shadow(0 1px 10px darken(#eee, 35%));
+						filter: drop-shadow(0 1px 10px darken(#eee, 15%));
 						&:hover {
 							transform: scale(1.1);
 						}

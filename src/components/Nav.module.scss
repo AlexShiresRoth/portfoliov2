@@ -7,12 +7,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background: #fff;
+	background: transparent;
 	min-height: 5rem;
 	padding: 0.5rem 0;
 	width: 100%;
 	position: absolute;
-	box-shadow: 0 1px 5px darken(#eee, 15%);
 	transition: all 0.4s ease-in-out;
 	z-index: 99999;
 	& .nav__logo {
@@ -96,13 +95,16 @@
 .fixed_nav {
 	animation: fadenav 1s linear forwards;
 	position: fixed;
-	box-shadow: 0 2px 2px #eee;
+	background: #fff;
+	box-shadow: 0 1px 5px darken(#eee, 15%);
 	transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 700px) {
 	.nav__components {
 		position: fixed;
+		box-shadow: 0 1px 5px darken(#eee, 15%);
+		background: #fff;
 		& .nav__logo {
 			& p {
 				display: none;
