@@ -27,9 +27,14 @@
 		}
 		svg {
 			margin-right: 1rem;
-			height: 5rem;
-			width: 7rem;
+			height: 4rem;
+			width: 4rem;
+			max-width: 7rem;
+
 			overflow: visible;
+		}
+		& img {
+			max-width: 12rem;
 		}
 	}
 	& .links {

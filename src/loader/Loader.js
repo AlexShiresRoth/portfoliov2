@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../css/main.css';
-import { logo } from '../components/reusable/logo';
+import { logo2 } from '../components/reusable/logo';
 
 export const Loader = () => {
 	const loaderStyle = {
@@ -16,7 +16,7 @@ export const Loader = () => {
 
 	return (
 		<div className="load-fallback" style={{ ...loaderStyle }}>
-			{logo}
+			{logo2}
 		</div>
 	);
 };
