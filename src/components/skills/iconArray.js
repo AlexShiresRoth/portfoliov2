@@ -7,7 +7,7 @@ import sassIcon from '@iconify/icons-fa-brands/sass';
 import css3Alt from '@iconify/icons-fa-brands/css3-alt';
 import html5Icon from '@iconify/icons-fa-brands/html5';
 import nodeJs from '@iconify/icons-fa-brands/node-js';
-import reduxIcon from '@iconify/icons-logos/redux';
+import reduxIcon from '@iconify-icons/simple-icons/redux';
 import reactIcon from '@iconify/icons-fa-brands/react';
 
 export const iconArray = [

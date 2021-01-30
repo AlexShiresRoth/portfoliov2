@@ -16,9 +16,9 @@ const Nav = ({ projectsRef, skillsRef, contactRef, fixedNav, active }) => {
 	const navSvg = (
 		<svg viewBox="0 0 100 100">
 			<g>
-				<path d="M 0 50 L100 50 Z" strokeWidth="6px" stroke="#333" fill="#333" />
-				<path d="M 0, 30 L100, 30 Z" strokeWidth="6px" stroke="#333" fill="#333" />
-				<path d="M 0, 70 L100, 70 Z" strokeWidth="6px" stroke="#333" fill="#333" />
+				<path d="M 0 50 L100 50 Z" strokeWidth="6px" />
+				<path d="M 0, 30 L100, 30 Z" strokeWidth="6px" />
+				<path d="M 0, 70 L100, 70 Z" strokeWidth="6px" />
 			</g>
 		</svg>
 	);

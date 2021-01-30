@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import IntersectionObserver from 'intersection-observer-polyfill';
 import { Icons } from './reusable/Icons';
-import HeaderTag from './header/HeaderTag';
 import style from './Header.module.scss';
 
 const Header = ({ headerRef, setNav }) => {
@@ -65,7 +64,7 @@ const Header = ({ headerRef, setNav }) => {
 				<animated.div className={style.back} style={{ ...fade, ...rotate }}></animated.div>
 				<animated.div className={style.text_container} style={{ ...fade }}>
 					<h1>
-						Hey, I'm Alex Rothenberg, a <HeaderTag /> from NY.
+						Hey, I'm Alex Rothenberg, <br /> a Front End Developer from NY.
 					</h1>
 					<div className={style.about}>
 						<p>I'm passionate about all things javascript.</p>
@@ -84,6 +83,7 @@ const Header = ({ headerRef, setNav }) => {
 				<div className={style.separator}></div>
 				<AnimatedIcons icons={urls} slideUpLong={slideUpLong} />
 			</animated.div>
+			<div className={style.border_bottom}></div>
 		</animated.section>
 	);
 };

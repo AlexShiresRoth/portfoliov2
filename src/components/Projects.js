@@ -27,6 +27,7 @@ const Projects = ({ projectsRef, setNav }) => {
 
 	return (
 		<section className={style.section__projects}>
+			<div className={style.border_top}></div>
 			<div
 				ref={projectsRef}
 				className={style.buttons}
@@ -64,6 +65,7 @@ const Projects = ({ projectsRef, setNav }) => {
 			>
 				<ProjectsMap projects={apps} />
 			</div>
+			<div className={style.border_bottom}></div>
 		</section>
 	);
 };

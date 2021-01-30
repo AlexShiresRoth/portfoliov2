@@ -7,13 +7,15 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background: transparent;
 	min-height: 5rem;
 	padding: 0.5rem 0;
 	width: 100%;
 	position: absolute;
 	transition: all 0.4s ease-in-out;
 	z-index: 99999;
+	background: $brand-accent;
+	border-bottom: 1px solid lighten($brand-accent, 1%);
+	box-shadow: 0 1px 5px darken($brand-accent, 10%);
 	& .nav__logo {
 		display: flex;
 		flex-direction: row;
@@ -21,7 +23,7 @@
 		margin-left: 2rem;
 
 		& p {
-			color: $brand-secondary;
+			color: $brand-background;
 			font-size: 1.4rem;
 			font-weight: 700;
 		}
@@ -45,7 +47,7 @@
 		gap: 1rem;
 		margin-right: 2rem;
 		& a {
-			color: $brand-secondary;
+			color: $brand-background;
 			font-size: 1.2rem;
 			padding: 1rem;
 			transition: all 0.4s ease-in-out;
@@ -69,11 +71,11 @@
 				visibility: visible;
 				width: 100%;
 				display: block;
-				background: $brand-secondary;
+				background: $brand-background;
 			}
 		}
 		& a:not(:first-child) {
-			border-left: 1px solid #eee;
+			border-left: 1px solid lighten($brand-accent, 2%);
 		}
 		& .active {
 			&::after {
@@ -81,7 +83,7 @@
 				visibility: visible;
 				width: 100%;
 				display: block;
-				background: $brand-secondary;
+				background: $brand-background;
 				transition: all 0.4s ease-in-out;
 				position: absolute;
 				top: 100%;
@@ -100,16 +102,15 @@
 .fixed_nav {
 	animation: fadenav 1s linear forwards;
 	position: fixed;
-	background: #fff;
-	box-shadow: 0 1px 5px darken(#eee, 15%);
+	background: $brand-accent;
+	box-shadow: 0 1px 15px darken($brand-accent, 15%);
 	transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 700px) {
 	.nav__components {
 		position: fixed;
-		box-shadow: 0 1px 5px darken(#eee, 15%);
-		background: #fff;
+
 		& .nav__logo {
 			& p {
 				display: none;
@@ -119,11 +120,11 @@
 			position: absolute;
 			top: 100%;
 			left: 0;
-			background: #fbfbfb;
+			background: $brand-accent;
 			transition: all 0.5s ease-in-out;
 			& a {
 				font-size: 2rem;
-				color: $brand-secondary;
+				color: $brand-background;
 				transition: all 0.2s ease-in-out;
 				opacity: 1;
 				margin: 1rem 0;
@@ -164,7 +165,7 @@
 			align-items: center;
 
 			& a {
-				color: $brand-secondary;
+				color: $brand-background;
 				font-size: 1.2rem;
 			}
 		}
@@ -185,6 +186,8 @@
 			& path {
 				opacity: 1;
 				transition: all 0.5s ease-in-out;
+				stroke: $brand-background;
+				fill: $brand-background;
 			}
 		}
 		& .rotated {

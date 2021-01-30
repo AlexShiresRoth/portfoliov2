@@ -2,12 +2,34 @@
 
 .section__projects {
 	padding: 2rem 0;
+	padding-bottom: 4rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: #fff;
-	box-shadow: 0 1px 5px darken(#eee, 2%);
+	position: relative;
+	& .border_top {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-height: 140px;
+		width: 100%;
+		display: block;
+		background: url('https://res.cloudinary.com/snackmanproductions/image/upload/v1611971706/portfolio/border-flip_w164ij.png');
+		background-position: center;
+		background-size: cover;
+	}
+	& .border_bottom {
+		background: url('https://res.cloudinary.com/snackmanproductions/image/upload/v1611972626/portfolio/border-horizontal-normal_emp630.png');
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		min-height: 140px;
+		width: 100%;
+		display: block;
+		background-position: center;
+		background-size: cover;
+	}
 	& .buttons {
 		display: flex;
 		flex-direction: row;
@@ -16,7 +38,7 @@
 		margin: 2rem 1rem;
 		width: 100%;
 		& h2 {
-			color: $brand-secondary;
+			color: $brand-accent;
 			font-size: 5rem;
 		}
 	}
@@ -106,19 +128,20 @@
 							display: block;
 							height: 5px;
 							width: 10vw;
-							background: $brand-secondary;
+							background: $brand-accent;
+							opacity: 0.5;
 							margin: 0.5rem 0;
 						}
 						& h2 {
 							text-transform: uppercase;
-							color: #222;
+							color: $brand-contrast;
 							font-weight: 900;
 							font-size: 3rem;
 						}
 					}
 					& p {
 						margin: 1rem 0.5rem;
-						color: #999;
+						color: $brand-text;
 						font-size: 2rem;
 						line-height: 2;
 						font-weight: 700;
@@ -128,13 +151,20 @@
 						flex-direction: row;
 						justify-content: flex-start;
 						margin: 0.5rem;
+
 						& a {
-							font-size: 3rem;
-							color: $brand-secondary;
+							font-size: 2rem;
+							color: $brand-accent;
 							margin: 0 1vw 0 0;
-							&:hover {
-								color: lighten($brand-secondary, 10%);
-								cursor: pointer;
+							perspective: 1000px;
+							transition: all 0.3s ease;
+							& i {
+								transition: all 0.3s ease;
+								&:hover {
+									cursor: pointer;
+									color: $brand-main;
+									transform: rotate3d(1, 1, 1, 35deg);
+								}
 							}
 						}
 					}

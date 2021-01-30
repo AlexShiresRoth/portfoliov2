@@ -27,6 +27,7 @@ const Skills = ({ skillsRef, setNav }) => {
 
 	return (
 		<section className={style.section__skills}>
+			<div className={style.border_top}></div>
 			<div className={style.heading} ref={skillsRef}>
 				<h2
 					style={
