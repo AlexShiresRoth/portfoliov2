@@ -72,16 +72,16 @@ const Header = ({ headerRef, setNav }) => {
 						<p>I'm passionate about all things javascript.</p>
 					</div>
 				</animated.div>
-				{/* <a
+				<a
 					href="https://res.cloudinary.com/snackmanproductions/image/upload/v1594242061/portfolio/Alex_Rothenberg_Resume_6_ntkxgr.pdf"
 					download="Alex Roth Resume.pdf"
 					target="_blank"
 					rel="noopener noreferrer"
-				> */}
-				<button>
-					Download Resume <i className="fas fa-file-download"></i>
-				</button>
-				{/* </a> */}
+				>
+					<button>
+						Download Resume <i className="fas fa-file-download"></i>
+					</button>
+				</a>
 				<div className={style.separator}></div>
 				<AnimatedIcons icons={urls} slideUpLong={slideUpLong} />
 			</animated.div>
