@@ -7,7 +7,7 @@
 		"@iconify/icons-logos": "^1.0.9",
 		"@iconify/icons-mdi": "^1.0.34",
 		"@iconify/icons-simple-icons": "^1.0.17",
-		"axios": "^0.19.0",
+		"axios": "^0.21.1",
 		"intersection-observer-polyfill": "^0.1.0",
 		"node-sass": "^4.14.1",
 		"react": "^16.12.0",
