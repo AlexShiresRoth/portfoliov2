@@ -60,7 +60,9 @@ const Header = ({ headerRef, setNav }) => {
 		}
 	}, [setNav, headerRef]);
 
-	const handleAuthForDownload = () => {};
+	const handleAuthForDownload = () => {
+		setAuthState(false);
+	};
 
 	return (
 		<animated.section className={style.section__header} style={fade} ref={headerRef}>
