@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 import IntersectionObserver from 'intersection-observer-polyfill';
 import { Icons } from './reusable/Icons';
 import style from './Header.module.scss';
 
 const Header = ({ headerRef, setNav }) => {
+	const [authState, setAuthState] = useState(false);
+
 	const urls = [
 		{
 			icon: <i className="fab fa-github" />,
@@ -72,16 +74,19 @@ const Header = ({ headerRef, setNav }) => {
 						<p>I'm passionate about all things javascript.</p>
 					</div>
 				</animated.div>
-				<a
-					href="https://res.cloudinary.com/snackmanproductions/image/upload/v1594242061/portfolio/Alex_Rothenberg_Resume_6_ntkxgr.pdf"
-					download="Alex Roth Resume.pdf"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<button>
-						Download Resume <i className="fas fa-file-download"></i>
-					</button>
-				</a>
+
+				<button onPointerDown={(e) => handleAuthForDownload()}>
+					Download Resume <i className="fas fa-file-download"></i>
+				</button>
+				{authState ? (
+					<a
+						href="https://res.cloudinary.com/snackmanproductions/image/upload/v1594242061/portfolio/Alex_Rothenberg_Resume_6_ntkxgr.pdf"
+						download="Alex Roth Resume.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+					></a>
+				) : null}
+
 				<div className={style.separator}></div>
 				<AnimatedIcons icons={urls} slideUpLong={slideUpLong} />
 			</animated.div>
