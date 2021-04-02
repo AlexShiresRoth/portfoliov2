@@ -86,7 +86,9 @@ const Header = ({ headerRef, setNav }) => {
 						download="Alex Roth Resume.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
-					></a>
+					>
+						download
+					</a>
 				) : null}
 
 				<div className={style.separator}></div>
